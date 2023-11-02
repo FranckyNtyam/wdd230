@@ -24,7 +24,7 @@ header {
 header img {
     width: auto;
     height: 220px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 40px;
 }
 
@@ -51,24 +51,27 @@ nav a:hover {
 }
 
 main {
-    width: auto;
+    display: grid;
+    grid-template-rows: auto auto auto;
     margin: 10px;
     padding: 10px;
 }
 
 
 h2 {
+    grid-row: 1;
     margin: 20px 0;
     border-bottom: 1px solid #000;
     font-size: 2rem;
 }
 
 .cards {
+    grid-row: 2;
     display: grid;
     grid-template-rows: auto 1fr;
     border: 1px solid #000;
     height: 400px;
-    width: 400px;
+    width: auto;
     margin-bottom: 10px;
 }
 
@@ -95,7 +98,9 @@ ul li {
 }
 
 .infos {
-    display: block;
+    grid-row: 3;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
     border: 1px solid #000;
     width: auto;
     height: 400px;
@@ -103,6 +108,7 @@ ul li {
 }
 
 .infos h3 {
+    grid-row: 1;
     background-color: #2F22FF;
     color: #fff;
     text-align: center;
@@ -113,6 +119,7 @@ ul li {
 .infos article {
 
     font-size: 2rem;
+    padding-left: 10px;
 }
 
 footer {
