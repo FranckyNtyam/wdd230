@@ -1,0 +1,165 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 780px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: auto;
+    align-content: center;
+}
+
+header {
+    background-color:#343434 ;
+    height: 100px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h4 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.three-first {
+    grid-row: 1;
+}
+
+ul li a {
+    text-decoration: none;
+    background-color: #2557A7;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#site-name {
+    position: relative;
+    margin: 20px;
+}
+
+#site-name img {
+    width: 100%;
+}
+
+#site-name h3 {
+    position: absolute;
+    background-color: #2557A7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#site-purpose, #site-scenarios, #site-color-schema, #site-typography, #site-wireframe {
+    display: grid;
+    margin: 20px;
+}
+
+#site-scenarios ol {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+ol li {
+    padding-bottom: 5px;
+}
+
+#site-color-schema table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table th {
+    background-color: #FFFFFF;
+}
+
+
+table th, table td {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+    border: 1px solid #343434;
+}
+
+ .primary {
+    background-color: #2557A7;
+    color: #FFFFFF;
+ }
+
+ .secondary {
+    background-color: #343434;
+    color: #FFFFFF;
+ }
+
+ .background {
+    background-color: #FFFFFF;
+ }
+
+ #site-typography h3 {
+    margin-bottom: 10px;
+ }
+
+ #site-typography p {
+    font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ #site-wireframe img {
+    width: 100%;
+    border: 1px solid #343434;
+ }
+
+ #site-wireframe .mobile-view {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+ }
+
+ footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2557A7;
+    height: auto;
+    padding: 20px;
+    color: #FFFFFF;
+    border-radius: 7px;
+ }
