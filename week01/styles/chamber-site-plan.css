@@ -89,9 +89,10 @@ h2 {
     left: 50%;
     transform: translate(-50%, -40%);
     color: #FFFFFF;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     padding: 10px;
     border-radius: 10px;
+    text-align: center;
 }
 
 #site-purpose,
@@ -165,14 +166,18 @@ table td {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-direction: column;
     background-color: #2557A7;
     height: auto;
-    padding: 20px;
     color: #FFFFFF;
     border-radius: 7px;
+    text-align: center;
+    
 }
+
+
+
 /* large view */
 @media screen and (min-width: 500px) {
     h1 {
@@ -182,4 +187,9 @@ footer {
     nav ul li {
         font-size: 1rem;
     }
+
+    #site-name h3 {
+        font-size: 1.3rem;
+    }
+
 }
