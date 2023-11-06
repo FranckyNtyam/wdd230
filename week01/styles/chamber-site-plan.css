@@ -32,7 +32,8 @@ p {
 h1 {
     color: #FFFFFF;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px;
+    font-size: medium;
 }
 
 h4 {
@@ -174,6 +175,10 @@ footer {
 }
 /* large view */
 @media screen and (min-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
     nav ul li {
         font-size: 1rem;
     }
