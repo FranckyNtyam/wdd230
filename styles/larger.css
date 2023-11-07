@@ -4,11 +4,16 @@
         align-items: center;
         align-content: center;
         justify-content: space-around;
+        
     }
    header img {
        width: 260px;
        height: 240px;
        
+   }
+
+   h1 {
+    font-size: 2rem;
    }
 
     
@@ -20,6 +25,11 @@
     nav ul li {
         
         list-style: none;
+        
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
     }
 
     .main-content {
@@ -29,6 +39,23 @@
     }
     .cards, .infos{
         width: auto;
+        height: auto;
     }
-   
+
+    h2 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+   .cards li {
+    font-size: 1.5rem;
+    padding: 10px;
+   }
+
+   footer {
+    font-size: 1.4rem;
+   }
 }

@@ -17,15 +17,20 @@ header {
     align-content: center;
     align-content: space-around;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
 
 }
 
 header img {
-    width: auto;
-    height: 220px;
-    padding: 10px;
+    width: 160px;
+    height: 160px;
     border-radius: 40px;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-left: 15px;
 }
 
 nav {
@@ -36,7 +41,7 @@ nav a {
     display: block;
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     margin: 2px;
 }
@@ -62,7 +67,8 @@ h2 {
     grid-row: 1;
     margin: 20px 0;
     border-bottom: 1px solid #000;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .cards {
@@ -70,7 +76,7 @@ h2 {
     display: grid;
     grid-template-rows: auto 1fr;
     border: 1px solid #000;
-    height: 400px;
+    height: 280px;
     width: auto;
     margin-bottom: 10px;
 }
@@ -81,7 +87,7 @@ h2 {
     grid-row: 1;
     text-align: center;
     padding: 20px 0;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }
 
 .cards ul {
@@ -93,8 +99,8 @@ h2 {
 
 ul li {
     list-style: none;
-    font-size: 1.8rem;
-    padding: 5px;
+    font-size: 1rem;
+    padding: 6px;
 }
 
 .infos {
@@ -103,7 +109,7 @@ ul li {
     grid-template-rows: auto 1fr 1fr;
     border: 1px solid #000;
     width: auto;
-    height: 400px;
+    height: 280px;
     
 }
 
@@ -113,12 +119,12 @@ ul li {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }
 
 .infos article {
 
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding-left: 10px;
 }
 
@@ -127,5 +133,5 @@ footer {
     color: #ffffff;
     text-align: center;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
