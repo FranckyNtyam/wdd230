@@ -11,12 +11,12 @@ body {
 }
 
 header {
-    background-color: #808080;
+    background-color: #413f3f;
     display: flex;
     align-items: center;
     align-content: center;
     align-content: space-around;
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
     text-align: center;
 
@@ -31,13 +31,73 @@ header img {
 h1 {
     font-size: 1.2rem;
     margin-left: 15px;
+    font-weight: 100;
+}
+
+#dark-mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    
+}
+
+#dark-mode span {
+    display: none;
+}
+
+.dark-mode{
+  background-color:  #000;
+  color: #ffffff;
+}
+
+#dark-mode::before {
+    content: url("../images/dark-mode.webp");
+    background: #000;
+}
+
+#dark-mode.light-mode::before {
+    content: url("../images/light-bulb (1).webp");
 }
 
 nav {
+
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid #413f3f;
+    margin-left: 20px;
+    padding: .25rem .75rem;
+    background-color: #2F22FF;
+    color: #ffffff;
+}
+
+#menu span {
+   display: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
     background-color: #2F22FF;
 }
 
-nav a {
+.navigation li {
+    display: none;
+}
+
+.navigation a {
     display: block;
     color: #fff;
     text-decoration: none;
@@ -46,13 +106,24 @@ nav a {
     margin: 2px;
 }
 
-nav a:hover {
-    background-color: #808080;
+.navigation a:hover {
+    background-color: #413f3f;
     border: 1px solid #fff;
 }
 
+/* set button when is clicked*/
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
 .active {
-    background-color: #808080;
+    background-color: #413f3f;
 }
 
 main {
@@ -68,7 +139,7 @@ h2 {
     margin: 20px 0;
     border-bottom: 1px solid #000;
     font-size: 1rem;
-    
+
 }
 
 .cards {
@@ -110,7 +181,7 @@ ul li {
     border: 1px solid #000;
     width: auto;
     height: 280px;
-    
+
 }
 
 .infos h3 {
@@ -129,9 +200,14 @@ ul li {
 }
 
 footer {
-    background-color: #3a3737;
+    display: flex;
+    flex-direction: column;
+    background-color: #413f3f;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
+}
+
+footer p {
     font-size: 1.2rem;
 }
