@@ -56,7 +56,7 @@ h1 {
 }
 
 #dark-mode.light-mode::before {
-    content: url("../images/light-bulb (1).webp");
+    content: url("../images/light-bulb.webp");
 }
 
 nav {
