@@ -34,7 +34,7 @@
         margin: 20px;
     }
 
-    #menu {
+    #button-menu {
         display: none;
     }
 
@@ -74,8 +74,8 @@
     }
 
     #join-us {
-        top: 10%;
-        right: 10%;
+        top: 8%;
+        right: 8%;
     }
 
     .event {
