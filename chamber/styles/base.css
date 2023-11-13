@@ -49,9 +49,9 @@ p {
 
 .logo-media img {
     width:40px;
-    padding-top: 3px;
+    padding: 5px;
     background-color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 180px;
 }
 
 nav {
