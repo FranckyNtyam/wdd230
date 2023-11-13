@@ -60,7 +60,7 @@ nav {
     margin: 1rem auto;
 }
 
-#button-menu {
+#buttonMenu {
     font-size: 1.5rem;
     border: 1px solid #413f3f;
     margin-left: 20px;
@@ -69,15 +69,15 @@ nav {
     color: #ffffff;
 }
 
-#button-menu span {
+#buttonMenu span {
     display: none;
 }
 
-#button-menu::before {
+#buttonMenu::before {
     content: "☰";
 }
 
-#button-menu.open::before {
+#buttonMenu.open::before {
     content: 'X';
 }
 

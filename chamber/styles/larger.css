@@ -34,13 +34,11 @@
         margin: 20px;
     }
 
-    #button-menu  {
+    #buttonMenu  {
         display: none;
     }
 
-    #button-menu span {
-        display: none;
-    }
+   
 
     .navigation {
         display: flex;
