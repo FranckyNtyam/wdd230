@@ -136,9 +136,13 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -40%);
+    background-color: #343434;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
+    padding: 10px;
+    border-radius: 35px;
+    opacity: 0.8;
 }
 
 #join-us {
