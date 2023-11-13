@@ -1,6 +1,6 @@
 
 // create hamburger button
-const hambergerButton = document.querySelector('#menu');
+const hambergerButton = document.querySelector('#buttonMenu');
 const navigation = document.querySelector('.navigation');
 
 hambergerButton.addEventListener('click', () => {
