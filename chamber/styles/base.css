@@ -182,9 +182,13 @@ h2 {
 .spotligth-second-company img{
     width: 100%;
     margin: 20px;
-    margin-left: 10px;
+   
 }
-
+.spotligth-third-company img{
+   
+    margin: 20px;
+    
+}
 figcaption{
     margin: 20px;
 }

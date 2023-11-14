@@ -91,6 +91,7 @@
     .spotlights {
         grid-column: 1/3;
         display: flex;
+        column-gap: 15px;
     }
 
     footer {
