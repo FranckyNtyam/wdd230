@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 400px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    width: 400px;
+    height: 600px;
+    margin-bottom: 10px;
+    background-color: #000;
+    animation: fade 30s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
