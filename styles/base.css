@@ -48,14 +48,14 @@ h1 {
     font-weight: 100;
 }
 
-#dark-mode {
+#dark-mode-button {
     position: absolute;
     top: 1.8rem;
     right: 1.6rem;
     
 }
 
-#dark-mode span {
+#dark-mode-button span {
     display: none;
 }
 
@@ -64,12 +64,12 @@ h1 {
   color: #ffffff;
 }
 
-#dark-mode::before {
+#dark-mode-button::before {
     content: url("../images/dark-mode.webp");
     background: #000;
 }
 
-#dark-mode.light-mode::before {
+#dark-mode-button.light-mode::before {
     content: url("../images/light-bulb.webp");
 }
 
@@ -79,7 +79,7 @@ nav {
     margin: 1rem auto;
 }
 
-#menu {
+#button-menu {
     font-size: 1.5rem;
     border: 1px solid #413f3f;
     margin-left: 20px;
@@ -88,15 +88,15 @@ nav {
     color: #ffffff;
 }
 
-#menu span {
+#button-menu span {
    display: none;
 }
 
-#menu::before {
+#button-menu::before {
     content: "☰";
 }
 
-#menu.open::before {
+#button-menu.open::before {
     content: "X";
 }
 

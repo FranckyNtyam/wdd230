@@ -7,7 +7,7 @@ document.querySelector('#lastModified').innerHTML = "last modification: " + date
 
 // create hamburger button
 
-const hamburgerButton = document.querySelector('#menu');
+const hamburgerButton = document.querySelector('#button-menu');
 const navigation = document.querySelector('.navigation');
 
 hamburgerButton.addEventListener('click', () => {
@@ -16,7 +16,7 @@ hamburgerButton.addEventListener('click', () => {
     hamburgerButton.classList.toggle('open');
 })
 
-const darkModeButton = document.querySelector('#dark-mode');
+const darkModeButton = document.querySelector('#dark-mode-button');
 const main = document.querySelector('main');
 
 darkModeButton.addEventListener('click', () => {
