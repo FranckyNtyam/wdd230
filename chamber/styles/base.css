@@ -133,6 +133,7 @@ main {
     flex-direction: column;
     justify-content: center;
 }
+
 .hero-image {
     position: relative;
 }

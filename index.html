@@ -22,7 +22,13 @@
 
 <body>
     <header>
-        <img src="./images/my_photo.jpg" alt="my picture">
+        <div class="profil-photo">
+            <picture>
+                <source media="max-width: 400px" srcset="images/my_photo_small.webp" width="400" height="250">
+               <img src="images/my_photo_larger.webp" width="960" height="600">
+            </picture>
+        </div>
+        
         <h1>Ntyam Adjomo Francky Ludovic</h1>
         <button id="dark-mode"><span>dark mode</span></button>
     </header>
@@ -36,6 +42,15 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width:400px )" srcset="images/hero-small.webp" width="399" height="250">
+                <img src="images/hero-larger.webp" alt="Aba temple" width="1278" height="800">
+            </picture>
+            <div class="hero-label">
+                <p>Aba Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="main-content">
             <section class="cards">
