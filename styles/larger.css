@@ -51,6 +51,10 @@
     }
 
 
+    .hero-label p {
+        font-size: 1.8rem;
+    }
+
     .main-content {
         display: flex;
         gap: 10px;
