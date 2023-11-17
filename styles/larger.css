@@ -19,7 +19,7 @@
         font-weight: 100;
     }
 
-    #dark-mode-button {
+    #buttonDarkMode {
         position: static;
         right: 25%;
         margin: 10px;
@@ -30,7 +30,7 @@
         margin: 20px;
     }
 
-    #button-menu {
+    #buttonMenu {
         display: none;
     }
 
