@@ -22,6 +22,7 @@
     #dark-mode {
         position: static;
         right: 25%;
+        margin: 10px;
     }
 
     nav {
@@ -52,13 +53,20 @@
 
     .main-content {
         display: flex;
-        align-content: center;
-        justify-content: space-between;
+        gap: 10px;
     }
+    
+     .cards {
+        grid-column: 1;
+        width: 100%;
+     }
 
+     .infos {
+        grid-column: 2;
+     }
+    
     .cards,
     .infos {
-        width: auto;
         height: auto;
     }
 

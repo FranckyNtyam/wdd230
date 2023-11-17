@@ -6,38 +6,37 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    max-width: 960px;
     margin: auto;
+    max-width: 960px;
 }
 
 header {
     background-color: #413f3f;
     display: flex;
     align-items: center;
-    align-content: center;
-    align-content: space-around;
     color: #ffffff;
-    padding: 10px;
     text-align: center;
+    margin: 20px;
 
 }
 
 .profil-photo img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 40px;
+    margin: 10px;
 }
 
 h1 {
     font-size: 1.2rem;
-    margin-left: 15px;
+    margin: 15px;
     font-weight: 100;
 }
 
 #dark-mode {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 1.8rem;
+    right: 1.6rem;
     
 }
 
@@ -127,8 +126,9 @@ nav {
 }
 
 main {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
     margin: 10px;
     padding: 10px;
 }
@@ -136,12 +136,12 @@ main {
 .hero {
     grid-row: 1;
     position: relative;
+    
   }
-  
+
   .hero img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    width: 100%;
+    height: auto;
   }
 
   .hero-label {
@@ -157,7 +157,7 @@ main {
   }
 
   .hero-label p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: 'Dancing Script', cursive;
     
   }
@@ -170,8 +170,15 @@ h2 {
 
 }
 
-.cards {
+.main-content {
     grid-row: 3;
+    display: grid;
+    grid-template-rows: auto auto;
+    
+}
+
+.cards {
+    grid-row: 1;
     display: grid;
     grid-template-rows: auto 1fr;
     border: 1px solid #000;
@@ -193,7 +200,7 @@ h2 {
     grid-row: 2;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    margin-bottom: auto;
 }
 
 ul li {
@@ -203,12 +210,13 @@ ul li {
 }
 
 .infos {
-    grid-row: 3;
+    grid-row: 2;
     display: grid;
     grid-template-rows: auto 1fr 1fr;
     border: 1px solid #000;
     width: auto;
     height: 280px;
+    margin-bottom: 10px;
 
 }
 
@@ -226,6 +234,10 @@ ul li {
     font-size: 1.3rem;
     padding-left: 10px;
 }
+ .map iframe {
+    width: 100%;
+    height: auto;
+ }
 
 footer {
     display: flex;
@@ -234,6 +246,7 @@ footer {
     color: #ffffff;
     text-align: center;
     font-weight: bold;
+    margin: 20px;
 }
 
 footer p {
