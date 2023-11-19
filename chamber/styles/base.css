@@ -3,7 +3,7 @@
     padding: 0%;
     box-sizing: border-box;
 }
-
+/* Style for index page */
 body {
     max-width: 780px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -127,7 +127,7 @@ nav {
 .open li a {
     display: block;
 }
-
+/* Style main for index page */
 main {
     display: flex;
     flex-direction: column;
@@ -200,6 +200,26 @@ figcaption{
     margin: 20px;
 }
 
+/* Style main for discover page */
+
+.main-for-discover-page {
+    display: grid;
+    grid-auto-rows: auto auto auto auto auto auto auto;
+}
+
+.history {
+    grid-row: 1;
+}
+
+.economy {
+    grid-row: 2;
+}
+
+.gallery {
+    grid-row: 7;
+}
+
+
 footer {
     display: flex;
     flex-direction: column;
@@ -211,3 +231,4 @@ footer {
     padding: 0;
     text-align: center;
 }
+
