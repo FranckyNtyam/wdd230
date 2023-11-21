@@ -205,6 +205,13 @@ figcaption{
 .main-for-discover-page {
     display: grid;
     grid-auto-rows: auto auto auto auto auto auto auto;
+    margin: 20px;
+}
+
+.main-for-discover-page h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2F22FF;
 }
 
 .history {
@@ -214,11 +221,114 @@ figcaption{
 .economy {
     grid-row: 2;
 }
+.calendar-container {
+    background-color: #FFFFFF;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.calendar-container header {
+    display: flex;
+    align-items: center;
+    padding: 24px 29px 9px;
+    justify-content: space-between;
+}
+
+.calendar-navigation{
+    display: flex;
+}
+
+.calendar-navigation span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 49%;
+    user-select: none;
+    color: #343434;
+    font-size: 1.8rem;
+}
+
+.calendar-navigation span:last-child {
+    margin-right: -10px;
+}
+
+.calendar-navigation span:hover {
+    background: #FFFFFF;
+}
+
+.calendar-current-date {
+    font-size: 500;
+    font-size: 1.45rem;
+}
+
+.calendar-body {
+    padding: 20px;
+}
+
+.calendar-body ul {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+}
+
+.calendar-body .calendar-dates {
+    margin-bottom: 20px;
+}
+
+.calendar-body li {
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+    color: #413f3f
+}
+
+.calendar-body .calendar-weekdays li{
+   cursor: default;
+   font-weight: 500;
+}
+
+.calendar-body .calendar-dates li {
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.calendar-dates li.inactive {
+    color: #FFFFFF;
+}
+
+.calendar-dates li::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 49%;
+    transform: translate(-50%, -50%);
+}
+
+.calendar-dates li.active::before {
+    background: #2F22FF;
+}
+
+.calendar-dates li:not(.active) :hover::before {
+    background: #FFFFFF;
+}
+
 
 .gallery {
     grid-row: 7;
 }
-
+.gallery img {
+    width: 100%;
+    height: auto;
+}
 
 footer {
     display: flex;

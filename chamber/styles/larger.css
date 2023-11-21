@@ -94,6 +94,18 @@
         column-gap: 15px;
     }
 
+    /* Styles of discover page */
+    .main-for-discover-page {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    .gallery {
+        grid-column: 2;
+        grid-row: 1/4;
+    }
+
     footer {
         display: flex;
         flex-direction: row;
