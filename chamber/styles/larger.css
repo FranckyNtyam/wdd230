@@ -97,7 +97,7 @@
     /* Styles of discover page */
     .main-for-discover-page {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
 
