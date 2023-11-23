@@ -12,6 +12,8 @@
     <meta property="og:url" content="https://franckyntyam.github.io/wdd230/chamber">
     <meta name="twiteer:card" content="summary_large_image">
     <title>Yaounde Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css">
+<script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap" rel="stylesheet">
@@ -140,33 +142,40 @@
             </div>
             <div class="gallery">
                 <picture>
-                    <source media="(min-width: 400px)" srcset="images/etoudi-small.webp">
-                    <img src="images/etoudi-medium.webp" alt="etoudi house" width="612" height="409">
+                    <a href="images/etoudi-small.webp" class="progressive replace">
+                    <img src="images/etoudi-medium.webp" class="preview" alt="etoudi house" width="612" height="409" >
+                    </a>
                 </picture>
                 <picture>
-                    <source media="(min-width: 400px)" srcset="images/premier-minister-small.webp">
-                    <img src="images/premier-ministere.webp" alt="prime ministere office" width="306" height="205">
+                    <a href="images/premier-minister-small.webp" class="progressive replace">
+                    <img src="images/premier-ministere.webp" class="preview" alt="prime ministere office" width="306" height="205">
+                    </a>
                 </picture>
                 <picture>
-                    <source media="(min-width: 400px)" srcset="images/vue-aerienne-small.webp">
-                    <img src="images/vue-aerienne-medium.webp" alt="yaounde photo on top" width="612" height="408">
+                    <a href="images/vue-aerienne-small.webp" class="progressive replace">
+                    <img src="images/vue-aerienne-medium.webp"  class="preview" alt="yaounde photo on top" width="612" height="408">
+                    </a>
                 </picture>
                 <picture>
-                    <source media="(min-width: 400px)" srcset="images/hilton-small.webp">
-                    <img src="images/hilton-medium.webp" alt="hilton hotel" width="612" height="408">
+                    <a href="images/hilton-small.webp" class="progressive replace">
+                    <img src="images/hilton-medium.webp" class="preview" alt="hilton hotel" width="612" height="408">
+                    </a>
                 </picture>
                 <picture>
-                    <source media="(min-width: 400px)" srcset="images/musee.webp">
-                    <img src="images/musee-medium.webp" alt="muse of yaounde" width="474" height="355">
+                    <a href="images/musee.webp" class="progressive replace">
+                    <img src="images/musee-medium.webp"  class="preview" alt="muse of yaounde" width="474" height="355">
+                    </a>
                 </picture>
                 <picture>
-                    <source media="(min-width: 400px)" srcset="images/monument-reunification-small.webp">
-                    <img src="images/monument-reunification-medium.webp" alt="reunification monument" width="275"
+                    <a href="images/monument-reunification-small.webp" class="progressive replace">
+                    <img src="images/monument-reunification-medium.webp" class="preview" alt="reunification monument" width="275"
                         height="183">
+                    </a>
                 </picture>
                 <picture>
-                    <source media="(min-width: 400px)" srcset="images/palais-congret-small.webp">
-                    <img src="images/palais-congret-medium.webp" alt="congret building" width="564" height="423">
+                    <a href="images/palais-congret-small.webp" class="progressive replace">
+                    <img src="images/palais-congret-medium.webp" class="preview" alt="congret building" width="564" height="423">
+                    </a>
                 </picture>
             </div>
 
@@ -179,7 +188,7 @@
         <p class="phone">Phone Number: +237 694785153</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="./scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
