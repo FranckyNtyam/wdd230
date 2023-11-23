@@ -244,7 +244,12 @@ figcaption{
     border-radius: 15px 15px;
 }
 
-.gallery picture {
+.visits {
+    color: #2F22FF;
+    font-size: 1.5rem;
+}
+
+.gallery a {
     margin: 10px;
 }
 
