@@ -106,6 +106,10 @@
         grid-row: 1/4;
     }
 
+    .gallery img:hover {
+       opacity: 0.5;
+    }
+
     footer {
         display: flex;
         flex-direction: row;
