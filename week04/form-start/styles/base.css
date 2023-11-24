@@ -118,6 +118,9 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
+input[name="text"] 
+{background-color: #efac3e;}
+
 /*----------- FOOTER --------------*/
 footer {
     background-color: #ddd;

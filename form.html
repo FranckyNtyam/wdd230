@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Developement: course assignment portal">
+    <meta name="author" content="Ntyam Adjomo Francky Ludovic">
+    <meta property="og:title" content="WDD230 Web Frontend Development">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="images/yaounde.webp">
+    <meta property="og:url"  content="https://franckyntyam.github.io/wdd230/">
+    <title>Ntyam Adjomo Francky Ludovic - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link href="./styles/base.css" type="text/css" rel="stylesheet">
+    <link href="./styles/larger.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="profil-photo">
+            <picture>
+                <source media="(max-width:400px)" srcset="images/my_photo_small.webp" width="400" height="250">
+               <img src="images/my_photo_larger.webp" alt="my profil photo"  width="960" height="600" loading="lazy">
+            </picture>
+        </div>
+        
+        <h1>Ntyam Adjomo Francky Ludovic</h1>
+        <button id="buttonDarkMode" aria-label="Dark mode"></button>
+    </header>
+    <nav>
+        <button id="buttonMenu" title="menu"></button>
+        <ul class="navigation">
+            <li ><a href="#home" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+       <form>
+        <fieldset>
+            <label>Username<input type="text" id="username" name="username" required></label>
+        </fieldset>
+        <fieldset>
+            <label>Password<input type="text" id="password" name="passeword" pattern=".{8,}" required></label>
+        </fieldset>
+        <fieldset>
+            <label>Password repeated for confirmation<input type="text" id="password-repeated" name="password-repeated" pattern=".{8,}" required></label>
+        </fieldset>
+
+       </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> 🌺 Ntyam Adjomo Francky Ludovic 🌺 Cameroon 🇨🇲</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="./scripts/getDates.js"></script>
+</body>
+
+
+</html>
