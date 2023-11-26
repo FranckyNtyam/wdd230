@@ -251,6 +251,8 @@ figcaption{
 
 .gallery a {
     margin: 10px;
+    text-decoration: none;
+    text-align: center;
 }
 
 
