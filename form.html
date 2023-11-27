@@ -48,11 +48,25 @@
             <label>Username<input type="text" id="username" name="username" required></label>
             <label>Password<input type="text" id="password" name="passeword" pattern=".{8,}" required></label>
             <label>Password repeated for confirmation<input type="text" id="password-repeated" name="password-repeated" pattern=".{8,}" required></label>
-            <label  class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label  class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" title="Please enter a valid email address" required></label>
 
         </fieldset>
+
         <fieldset>
-           
+           <label>Rating <input type="range" id="rate" name="rate" min="1" max="10" value="1" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+            </label>
         </fieldset>
         <fieldset>
            
