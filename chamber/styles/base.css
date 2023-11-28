@@ -198,8 +198,18 @@ margin: 20px;
     margin: 20px;
     
 }
+figure {
+    border: 1px solid #343434;
+    border-radius: 15px 15px;
+    margin-bottom: 10px;
+}
+
 figcaption{
     margin: 20px;
+    text-align: center;
+    background-color: #343434;
+    color: #FFFFFF;
+    border-radius: 15px 15px;
 }
 
 /* Style main for discover page */
