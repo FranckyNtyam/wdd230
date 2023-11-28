@@ -5,6 +5,18 @@ let date = day.getMonth() + 1 +"/" + day.getDate() + "/" + day.getFullYear();
 document.querySelector('#year').innerHTML = year;
 document.querySelector('#lastModified').innerHTML = "last modification: " + date + " " + time;
 
+// rating
+
+const rangevalue = document.getElementById('rangevalue');
+const range = document.getElementById('rate');
+
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
+function displayRatingValue(){
+    rangevalue.innerHTML = range.value;
+}
+
 // create hamburger button
 
 const hamburgerButton = document.querySelector('#buttonMenu');
@@ -49,12 +61,3 @@ numberOfVisits++;
 
 localStorage.setItem("numberOfVisitsLocalStorage", numberOfVisits);
 
-const rangevalue = document.getElementById('rangevalue');
-const range = document.getElementById('r');
-
-range.addEventListener('change', displayRatingValue);
-range.addEventListener('input', displayRatingValue);
-
-function displayRatingValue(){
-    rangevalue.innerHTML = range.value;
-}

@@ -281,20 +281,26 @@ form label.top input {
     max-width: 20rem;
     background-color: rgb(0, 0, 0, 0.1);
 }
-.rate input {
-    margin-left: 25px;
-    width: 710px;  
+.rate {
+   display: flex;
+   flex-direction: column; 
+}
+
+input[type=range] {
+    
+    padding: .6rem;
 }
 
 #rangevalues {
     color: #2F22FF;
     font-size: 1rem;
     display: flex;
-    margin-left: 75px;
+
 }
 
 #rangevalues option {
-    flex: 1 1 auto;
+    flex:1 1 auto;
+    margin-left: 15px;
 }
 
 
