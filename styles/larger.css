@@ -88,6 +88,14 @@
         padding: 10px;
     }
 
+    input[type=range] {
+      margin-right: 55px;
+    }
+
+    #rangevalues option {
+        margin-left: 15px;
+    }
+
     footer {
         font-size: 1.4rem;
     }

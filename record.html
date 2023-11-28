@@ -43,43 +43,8 @@
         </ul>
     </nav>
     <main>
-        <div id="messagedisplay"></div>
-       <form method="get" action="record.html">
-        <fieldset>
-            <label class="top">Username<input type="text" id="username" name="username" required></label>
-            <label class="top">Password<input type="password" id="password" name="passeword" pattern=".{8,}" required></label>
-            <label class="top">Password repeated for confirmation<input type="password" id="password-repeated" name="password-repeated" pattern=".{8,}" required></label>
-            <label  class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" title="Please enter a valid email address" required></label>
-
-        </fieldset>
-
-        <fieldset>
-           <label class="rate">Rating: <span id="rangevalue">1</span><br>
-            <input type="range" id="rate" name="rate" min="1" max="10" value="1" step="1" list="rangevalues"><br>
-
-            <datalist id="rangevalues">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </datalist>
-        
-        </label>
-           
-          
-            
-        </fieldset>
-
-        <input type="submit" id="submitBtn" name="submitBtn" value="Send your rating">
-       
-
-       </form>
+        <h2>Rating</h2>
+        <p class="rate-p">Thanks for rating us.</p>
     </main>
 
     <footer>
