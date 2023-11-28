@@ -17,6 +17,28 @@ function displayRatingValue(){
     rangevalue.innerHTML = range.value;
 }
 
+// Check password
+
+const password1 = document.getElementById('password');
+const password2 = document.getElementById('password-repeated');
+const message = document.getElementById('messagedisplay');
+password2.addEventListener('focusout', checkSame);
+
+// Create function checkSame
+
+function checkSame() {
+    if (password1.value !== password2.value){
+        message.textContent = "Password is not the same!"
+        message.style.visibility = "show";
+        password2.style.backgroundColor = "red";
+        password2.value = "";
+        password2.focus();
+    } else {
+        message.style.display = "none";
+        password2.style.backgroundColor = "#fff";
+        password2.style.color = "#000";
+    }
+}
 // create hamburger button
 
 const hamburgerButton = document.querySelector('#buttonMenu');
