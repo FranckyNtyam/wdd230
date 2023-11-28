@@ -258,78 +258,7 @@ ul li {
 
  /* Style Form */
 
- form fieldset {
-    margin: 2rem 0;
-    border: 1px solid #445ba9;
-    border-radius: 10px;
-    padding: .5rem 2%;
-}
-
-input:hover {
-    background-color: rgb(0, 0, 0, 0.1);
-}
-
-form label.top {
-    display: block;
-    padding-top: 1rem;
-    color: #2F22FF;
-    font-size: .8rem;
-}
-
-form label.top input {
-    -webkit-appearance:none ;
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 20rem;
-    
-}
-.rate {
-   display: flex;
-   flex-direction: column; 
-}
-
-input[type=range] {
-    
-    padding: .6rem;
-}
-
-#rangevalues {
-    color: #2F22FF;
-    font-size: 1rem;
-    display: flex;
-
-}
-
-#rangevalues option {
-    flex:1 1 auto;
-    margin-left: 15px;
-}
-
-#submitBtn:focus{
-    background-color: #fff;
-}
-
-#submitBtn:hover {
-    background-color: #413f3f;
-}
-
-
-form #submitBtn {
-    border: none;
-    background-color: #2F22FF;
-    color: white;
-    border-radius: 1rem;
-    padding: .5rem;
-    margin-top: 1rem;
-    width: 46%;
-    max-width: 10rem;
-}
-
+ 
 footer {
     display: flex;
     flex-direction: column;
