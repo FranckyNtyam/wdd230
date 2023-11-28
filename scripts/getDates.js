@@ -33,11 +33,12 @@ const displayVisitsNumber = document.querySelector('.visits-site');
 let numberOfVisits = Number(window.localStorage.getItem('numberOfVisitsLocalStorage')) || 0;
 
 // We determine if is the first visit or display the number of visits.
+let firstVisit ="This is your first in our website. Welcome!";
 
 if (numberOfVisits !== 0) {
     displayVisitsNumber.textContent = numberOfVisits;
 }else {
-    displayVisitsNumber.textContent = `This is your first in our website. Welcome!`;
+    displayVisitsNumber.textContent = firstVisit;
 }
 
 // increment number of visits by one.
@@ -47,3 +48,13 @@ numberOfVisits++;
 // store the new visit total into localStorage key equal numberOfVisitsLocalStorage.
 
 localStorage.setItem("numberOfVisitsLocalStorage", numberOfVisits);
+
+const rangevalue = document.getElementById('rangevalue');
+const range = document.getElementById('r');
+
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
+function displayRatingValue(){
+    rangevalue.innerHTML = range.value;
+}
