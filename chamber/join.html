@@ -24,7 +24,7 @@
 
 <body class="discover-page">
     <header>
-        
+
         <img src="images/logo_chamber_of_commerce.webp" alt="logo of Yoaunde chamber of commerce">
 
         <div class="media">
@@ -35,7 +35,7 @@
                 <img src="images/logo-black.webp" alt="tweeter actually x logo">
             </div>
         </div>
-    
+
     </header>
     <nav>
         <button id="buttonMenu" title="Menu"></button>
@@ -47,11 +47,62 @@
             <li><a href="login">Login</a></li>
         </ul>
     </nav>
-    <main>  
-    <form method="get" action="thankyou.html">
-        
-    </form>
-       
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <label for="firstname">
+                    first name
+                    <input type="text" id="fname" name="fname" required>
+                </label>
+                <label for="lastname">
+                    last name
+                    <input type="text" id="lname" name="lname" required>
+                </label>
+                <label for="title-or-po">
+                    title or position
+                    <input type="text" id="tipo" name="tipo" pattern="/^([A-Za-z0-9\-\s]$){7,}"
+                        title="text only accept alpha characters, hyphens, and space with a minimum of 7 characters ">
+                </label>
+                <label for="email">
+                    email address
+                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" required>
+                </label>
+                <label for="phone-number">
+                    mobile phone number
+                    <input type="telephone" id="phone" name="phone" required>
+                </label>
+                <label for="business-org">
+                    business/organization's name
+                    <input type="text" id="businessname" name="businessname" required>
+                </label>
+                <label for="member-level">
+                    membeship level
+                    <select name="level">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="np">NP Membership is for non profit organizations and there is no fee.</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership
+                        </option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="business-org-desc">
+                    business/organisation' description
+                    <textarea id="description" name="description">
+                    describe your organisation...
+                </textarea>
+                </label>
+                <label for="timestamp">
+                    timestamp
+                    <input type="hidden" id="timestamp" name="timestamp">
+                </label>
+            </fieldset>
+
+            <input type="submit" name="button" id="submitBtn" value="Become A New Member">
+
+
+        </form>
+
     </main>
     <footer>
         <p class="copyrigth">&copy;Copyrigth<span id="year"></span> 🌺 Yaounde Chamber of Commerce 🌺 </p>

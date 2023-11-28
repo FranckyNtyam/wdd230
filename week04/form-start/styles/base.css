@@ -93,6 +93,10 @@ form label.top input, form label.top select {
     background-color: rgb(0, 0, 0, 0.1);
 }
 
+.select-icon {
+    text-align: right;
+}
+
 form label.sbs {
     display: block;
     padding: .75rem 0;
