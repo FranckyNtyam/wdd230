@@ -1,0 +1,28 @@
+{
+    "familyName": "Ntyam Adjomo Francky Ludovic",
+    "dateFamilyMoveIntoWard": "1th Decembre 2023",
+    "numberOfPeopleFamily": 9,
+    "visitByBishop": "Zang Gervais Gerard",
+    "familyMembers":[
+        {
+            "name": "Bella Melanie epouse Ntyam",
+            "gender": "female",
+            "birthdate":"07th May 1987"
+        },
+        {
+            "name": "Diam Ntyam Barbara",
+            "gender": "female",
+            "birthdate": "30 April 2005"
+        },
+        {
+            "name": "Eloundou Menye Ordiane",
+            "gender": "female",
+            "birthdate": "23 September 2005"
+        },
+        {
+            "name": "Belibi Ntyam Archange",
+            "gender": "male",
+            "birthdate": "05th January 2011"
+        }
+    ]
+}
