@@ -15,12 +15,9 @@ const getLinks = (weeks) => {
         let difWeek = document.querySelector('#weeks');
         let descActivity = document.querySelector('#desc-activity');
         difWeek.innerHTML =`${weekNum.week}:`;
-        weekNum.links.forEach(link =>{
-            descActivity.innerHTML = `${link.title}`;
-            let url = document.querySelector('a');
-            let links = link.url;
-            url.setAttribute('href', links);
-        });
+        
+           
+        
         
 
     })
