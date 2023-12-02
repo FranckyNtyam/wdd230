@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    max-width: 960px;
+   
 }
 
 header, main, footer {
@@ -37,15 +37,13 @@ main {
 }
 
 #cards {
-    /* background-color: #658ddd; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     justify-content: center;
-    gap: 20px;
 }
 
 img {
-    max-width: 100% ;
+    max-width: 100%;
     height: auto;
 }
 section {
@@ -56,3 +54,4 @@ section {
 footer{
     text-align: center;
 }
+    
