@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 960px;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    padding: auto;
+}
+
+header {
+  background-color: hsl(2%, 2%, 76%);
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 20px hsl(0, 2%, 38%) inset;
+}
+
+h1 {
+    padding: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+h1, h2 {
+    color: hsl(243, 22%, 47%);
+    font-weight: 100%;
+}
+
+main {
+    text-align: center;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); */
+}
+
+#cards {
+    /* background-color: #658ddd; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    max-width: 100% ;
+    height: auto;
+}
+section {
+    margin: 20px;
+    background-color: hsl(219, 18%, 69%);
+}
+
+footer{
+    text-align: center;
+}
