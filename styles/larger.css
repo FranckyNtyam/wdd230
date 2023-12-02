@@ -61,12 +61,13 @@
     }
     
      .cards {
-        grid-column: 1;
+        
         width: 100%;
      }
 
      .infos {
-        grid-column: 2;
+       
+        width: 100%;
      }
     
     .cards,

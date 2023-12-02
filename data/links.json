@@ -5,12 +5,84 @@
             "links": [
                { 
                 "url": "week01/holygrail.html",
-                "title": "HG Layout"
+                "title": "Layout"
             
             },
             {
                 "url": "week01/media-query.html",
-                "title": "mQueries"
+                "title": "Media Queries"
+            }
+
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+               { 
+                "url": "/week02/design.html",
+                "title": "Responsive Design"
+            
+            },
+            {
+                "url": "./week02/bom.html",
+                "title": "DOM Manipulation"
+            }
+
+            ]
+        }
+        {
+            "week": "Week 3",
+            "links": [
+               { 
+                "url": "week03/images/landscape.webp",
+                "title": "WebP"
+            
+            },
+            {
+                "url": "week03/lazyload.html",
+                "title": "Lazy loading"
+            },
+            {
+                "url": "week03/resonsible-images.html",
+                "title": "Responsive Images: srcset"
+            }
+
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+               { 
+                "url": "week04/tablebuild.html",
+                "title": "HTML Tablest"
+            
+            },
+            {
+                "url": "week04/form-start/index.html",
+                "title": "HTML Forms"
+            }
+
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+               { 
+                "url": "https://codepen.io/franckui/pen/PoVyvzZ",
+                "title": "Pseudo-element"
+            
+            },
+            {
+                "url": "week05/new-ward-members.json",
+                "title": "JSON"
+            },
+            {
+                "url": "week05/prophets.html",
+                "title": "Fetch API"
+            },
+            {
+                "url": "week05/weathers.html",
+                "title": "Consuming a weather API"
             }
 
             ]

@@ -251,6 +251,21 @@ ul li {
     font-size: 1.3rem;
     padding-left: 10px;
 }
+.weather {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weather img {
+    background-color: #FFF;
+    margin-top: 0;
+}
+.weather p {
+    padding-top: 30px;
+}
+
  .map iframe {
     width: 100%;
     height: auto;

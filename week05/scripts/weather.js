@@ -33,7 +33,9 @@ const displayResults = (data) => {
 
     currentTemp.textContent = `${data.main.temp} &deg;F`;
     const iconsrc =`https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    
     let desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('width', '120');
     weatherIcon.setAttribute('height', '120');
     captionDesc.textContent = `${desc}`;
