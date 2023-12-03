@@ -55,3 +55,54 @@ numberOfVisits++;
 // store the new visit total into localStorage key equal numberOfVisitsLocalStorage.
 
 localStorage.setItem("numberOfVisitsLocalStorage", numberOfVisits);
+
+// Member information
+
+const url ="https://franckyntyam.github.io/wdd230/data/members.json";
+
+const cards = document.querySelector('#cards');
+
+async function getCompanyData(url) {
+    const response = await fetch(url);
+    const data = await response.json();
+    // console.table(data.prophets);
+     displayCompany(data.prophets);
+}
+
+const displayCompany = (companies) => {
+    companies.forEach((company) => {
+    let card = document.createElement('section');
+    let companyName = document.createElement('h2');
+    let adress = document.createElement('p');
+    let phoneNumber = document.createElement('p');
+    let images = document.createElement('img');
+    let website = document.createElement('p');
+    let membersLevel = document.createElement('p');
+    let location = document.createElement('p');
+
+    companyName.textContent = ` ${company.name}`;
+    adress.textContent = `Adress: ${company.adress}`;
+    phoneNumber.textContent = `Phone Numbers: ${company.phone}`;
+    website.textContent = `Website : ${company.website}`;
+    membersLevel.textContent = `Member Level: ${company.level}`;
+    location.textContent = `Location: ${company.location}`;
+    images.setAttribute('src', company.image);
+    images.setAttribute('alt', `Portrait of ${company.name} `);
+    images.setAttribute('loading', 'lazy');
+    images.setAttribute('width', '300');
+    images.setAttribute('height', '400');
+    card.appendChild(images);
+    card.appendChild(companyName);
+    card.appendChild(adress);
+    card.appendChild(phoneNumber);
+    card.appendChild(website);
+    card.appendChild(membersLevel);
+    card.appendChild(location);
+
+
+    cards.appendChild(card);
+    // card.style.backgroundColor = '#658ddd'
+    });
+}
+
+getProphetData(url);

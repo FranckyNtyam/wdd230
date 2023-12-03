@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name":" CHOCOLATERIE CONFISERIE DU CAMEROUN",
+            "adress":"275 Douala",
+            "phone": "(+237) 33376680",
+            "website":"www.chococam.net",
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FChococamFMCG%2F%3Flocale%3Dfr_FR&psig=AOvVaw0Gi5YV3X9kuaTGVLzE8DrP&ust=1701651571086000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKjM76CI8oIDFQAAAAAdAAAAABAE",
+            "level":"Silver Membership",
+            "location": "Douala"
+        },
+        {
+            "name":" ELEVAGE PROMOTION AFRIQUE SARL",
+            "adress":"8202 DOUALA",
+            "phone": "(+237) 33471891/33471892",
+            "website":"wwwepacameroun.com",
+            "image": "https://epa-sa.com/wp-content/uploads/2017/06/potatos_small.png",
+            "level":"Gold Member",
+            "location": "Douala"
+        },
+        {
+            "name":" PAMOL PLANTATION",
+            "adress":"5483 DOUALA",
+            "phone": "(+237) 33430501/77560413",
+            "website":" www.pamolplantation.com",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrAZsFZ6qyXf6yFVQ7cwYF0ec9GuAtCrD7S_WAHC5oxfzdsi3vxkFrDnAPtRbNlF_KLM&usqp=CAU",
+            "level":"Bronze Member",
+            "location": "Douala"
+        },
+        {
+            "name":"ARAB CONTRACTORS CAMEROON LTD",
+            "adress":"14717 YAOUNDE",
+            "phone": "(+237) 22013306/22202511",
+            "website":"http://www.arabcont.com/",
+            "image": "https://www.shutterstock.com/image-photo/close-civil-male-engineer-asian-600nw-755856148.jpg",
+            "level":"Gold member",
+            "location": "Yaounde"
+        },
+        {
+            "name":"RAZEL CAMEROUN ",
+            "adress":"11306 YAOUNDE",
+            "phone": "22220306/22220780",
+            "website":"http://www.razel.fr/",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPKmpIFjVsgzxndS4GwSF8MVk0fE6UQqxDrYANfMY90Q&s",
+            "level":"Silver Member",
+            "location": "Yaounde"
+        },
+        {
+            "name":"CAMEROON DEVELOPMENT CORPORATION",
+            "adress":"limbe",
+            "phone": "33431883/33332251",
+            "website":"http://www.cdc_cameroon.c/",
+            "image": "https://image.jimcdn.com/app/cms/image/transf/none/path/s1084e755aa436055/image/i36e4b160b889e12b/version/1681980911/image.jpg",
+            "membership level":"Bronze Member",
+            "location": "Limbe"
+        },
+        {
+            "name":"CAMEROUNAISE DES EAUX",
+            "adress":"157 DOUALA",
+            "phone": "33439980/33439981",
+            "website":"http://www.la-cde.com/",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFui8um7OjjAya1kFinxVakbH--VW6UCuEh7gPsQivMQ&s",
+            "level":"Bronze Member",
+            "location": "Douala"
+        }
+    ]
+}
