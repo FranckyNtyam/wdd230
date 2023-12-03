@@ -35,7 +35,7 @@ if (numberOfVisits == 0) {
 }
 else if (numberOfVisits !== 0 && numberOfVisits < Date.now() ){
 
-    displayVisitsNumber.textContent = `Back so soon! Awesome!`;
+    // displayVisitsNumber.textContent ="Back so soon! Awesome!";
 
 }
 else {
@@ -58,7 +58,7 @@ localStorage.setItem("numberOfVisitsLocalStorage", numberOfVisits);
 
 // Member information
 
-const url ="https://franckyntyam.github.io/wdd230/data/members.json";
+const url ="https://franckyntyam.github.io/wdd230/chamber/data/members.json";
 
 const cards = document.querySelector('#cards');
 
@@ -66,7 +66,7 @@ async function getCompanyData(url) {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.prophets);
-     displayCompany(data.prophets);
+     displayCompany(data.companies);
 }
 
 const displayCompany = (companies) => {
@@ -105,4 +105,4 @@ const displayCompany = (companies) => {
     });
 }
 
-getProphetData(url);
+getCompanyData(url);

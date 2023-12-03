@@ -303,6 +303,22 @@ form label input, select,textarea {
     color: #2F22FF;
 }
 
+/* Styles directory page */
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    justify-content: center;
+}
+
+#cards img {
+    max-width: 100%;
+    height: auto;
+}
+#cards section {
+    margin: 20px;
+    background-color: hsl(219, 18%, 69%);
+}
 
 footer {
     display: flex;
