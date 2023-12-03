@@ -246,7 +246,7 @@ ul li {
     font-size: 1.4rem;
 }
 
-.infos article {
+.infos {
 
     font-size: 1.3rem;
     padding-left: 10px;
@@ -266,7 +266,8 @@ ul li {
     padding-top: 30px;
 }
 
-.infos h4 {
+
+.infos p {
     text-align: center;
     color: #2F22FF;
 }
