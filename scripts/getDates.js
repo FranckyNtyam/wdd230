@@ -31,7 +31,7 @@ const displayDataWeather = (dataObject) => {
     const icons =`https://openweathermap.org/img/w/${dataObject.weather[0].icon}.png`;
 
     weatherIcon.setAttribute('src', icons);
-    weatherIcon.setAttribute('width', '120');
+    weatherIcon.setAttribute('width', '90');
     weatherIcon.setAttribute('height', '90');
 
 }
@@ -93,7 +93,7 @@ localStorage.setItem("numberOfVisitsLocalStorage", numberOfVisits);
 const password1 = document.getElementById('password');
 const password2 = document.getElementById('password-repeated');
 const message = document.getElementById('messagedisplay');
-password2.addEventListener('focusout', checkSame);
+// password2.addEventListener('focusout', checkSame);
 
 // Create function checkSame
 
@@ -122,4 +122,4 @@ function displayRatingValue(){
 }
 
 // range.addEventListener('change', displayRatingValue);
-range.addEventListener('input', displayRatingValue);
+// range.addEventListener('input', displayRatingValue);
