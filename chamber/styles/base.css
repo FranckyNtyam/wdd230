@@ -321,11 +321,15 @@ form label input, select,textarea {
     
 }
 
-.cards img, .list img {
+.cards img{
     max-width: 100%;
     height: auto;
 
 }
+.list img {
+    display: none;
+}
+
 .cards section, .list section {
     margin: 20px;
     padding: 20px;
@@ -336,21 +340,28 @@ form label input, select,textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px 30% 10px 40%;
+    
 }
 
+.list section:nth-last-child(even) {
+    background-color: hsla(200, 97%, 66%, 0.1);
+  }
+
+.list:nth-last-child(2n + 1) {
+  background-color: hsl(0, 33%, 89%, 0.1);
+}
 
 
 .main-directory-page h2 {
     color: #2F22FF;
 }
 
-.cards h2 {
+.cards section h3 {
     font-size: 1.2rem;
     margin: 10px;
 }
 
-.list h2 {
+.list section  h3 {
     font-size: .7rem;
 }
 

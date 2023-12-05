@@ -110,6 +110,23 @@
        opacity: 0.5;
     }
 
+    /* style of directory page */
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        justify-items: center;
+        border: 0;
+    }
+
+
     footer {
         display: flex;
         flex-direction: row;

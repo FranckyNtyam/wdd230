@@ -34,7 +34,7 @@ async function getCompanyData(url) {
 const displayCompany = (companies) => {
     companies.forEach((company) => {
     let card = document.createElement('section');
-    let companyName = document.createElement('h2');
+    let companyName = document.createElement('h3');
     let adress = document.createElement('p');
     let phoneNumber = document.createElement('p');
     let images = document.createElement('img');
@@ -45,7 +45,7 @@ const displayCompany = (companies) => {
     companyName.textContent = ` ${company.name}`;
     adress.textContent = `Adress: ${company.adress}`;
     phoneNumber.textContent = `Phone Numbers: ${company.phone}`;
-    website.innerHTML = `<strong>Website :</strong> ${company.website}`;
+    website.innerHTML = `Website : ${company.website}`;
     membersLevel.innerHTML = `Member Level: ${company.level}`;
     location.textContent = `Location: ${company.location}`;
     images.setAttribute('src', company.image);
@@ -73,7 +73,7 @@ getCompanyData(url);
 
 const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
-const display = document.querySelector('article');
+const display = document.querySelector('article')
 
 gridButton.addEventListener('click', () =>{
     display.classList.add("cards");
