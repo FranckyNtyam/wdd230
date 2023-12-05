@@ -333,7 +333,6 @@ form label input, select,textarea {
 .cards section, .list section {
     margin: 20px;
     padding: 20px;
-    border: 0px solid #343434 outset;
 }
 
 .cards section {
