@@ -318,30 +318,53 @@ form label input, select,textarea {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     justify-content: center;
+    
 }
 
-.cards img {
+.cards img, .list img {
     max-width: 100%;
     height: auto;
+
 }
-.cards section {
+.cards section, .list section {
     margin: 20px;
-    /* background-color: hsl(219, 18%, 69%); */
+    padding: 20px;
+    border: 1px solid #343434;
 }
 
 .list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 10px 30% 10px 40%;
 }
 
-.list section {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+
+.main-directory-page h2 {
+    color: #2F22FF;
 }
 
-.list img {
-    display: none;
+.cards h2 {
+    font-size: 1.2rem;
+    margin: 10px;
 }
+
+.list h2 {
+    font-size: .7rem;
+}
+
+.cards p {
+    padding: 5px;
+    font-weight: 10;
+}
+
+.list p {
+    padding: 3px;
+    font-size: .6rem;
+}
+
+
 
 
 footer {

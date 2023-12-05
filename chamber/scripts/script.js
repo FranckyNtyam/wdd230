@@ -45,8 +45,8 @@ const displayCompany = (companies) => {
     companyName.textContent = ` ${company.name}`;
     adress.textContent = `Adress: ${company.adress}`;
     phoneNumber.textContent = `Phone Numbers: ${company.phone}`;
-    website.textContent = `Website : ${company.website}`;
-    membersLevel.textContent = `Member Level: ${company.level}`;
+    website.innerHTML = `<strong>Website :</strong> ${company.website}`;
+    membersLevel.innerHTML = `Member Level: ${company.level}`;
     location.textContent = `Location: ${company.location}`;
     images.setAttribute('src', company.image);
     images.setAttribute('alt', `Portrait of ${company.name} `);
