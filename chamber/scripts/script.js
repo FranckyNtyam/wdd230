@@ -73,7 +73,7 @@ getCompanyData(url);
 
 const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
-const display = document.querySelector('article')
+const display = document.querySelector('.cards');
 
 gridButton.addEventListener('click', () =>{
     display.classList.add("cards");
