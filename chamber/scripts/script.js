@@ -34,7 +34,7 @@ async function getCompanyData(url) {
 const displayCompany = (companies) => {
     companies.forEach((company) => {
     let card = document.createElement('section');
-    let companyName = document.createElement('h3');
+    let companyName = document.createElement('h2');
     let adress = document.createElement('p');
     let phoneNumber = document.createElement('p');
     let images = document.createElement('img');
