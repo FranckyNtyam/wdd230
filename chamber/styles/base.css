@@ -130,7 +130,7 @@ nav {
     display: block;
 }
 /* Style main for index page */
-main {
+.main-home-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,20 +305,44 @@ form label input, select,textarea {
 
 /* Styles directory page */
 
-#cards {
+.main-directory-page {
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+.main-directory-page .menu {
+    text-align: center;
+    background-color: #343434;
+}
+
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     justify-content: center;
 }
 
-#cards img {
+.cards img {
     max-width: 100%;
     height: auto;
 }
-#cards section {
+.cards section {
     margin: 20px;
-    background-color: hsl(219, 18%, 69%);
+    /* background-color: hsl(219, 18%, 69%); */
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.list img {
+    display: none;
+}
+
 
 footer {
     display: flex;
