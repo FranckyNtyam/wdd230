@@ -313,7 +313,7 @@ form label input, select,textarea {
     text-align: center;
     background-color: #343434;
 }
-
+ 
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
