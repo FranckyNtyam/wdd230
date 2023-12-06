@@ -1,9 +1,9 @@
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
-}
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 :root {
     --white: #eee;
+    --blue: #2F22FF;
+    --hover-color-input:  rgb(0, 0, 0, 0.1);
+    --button-background-color: #413f3f;
 }
 
 
@@ -17,18 +17,17 @@ form fieldset {
 }
 
 input:hover {
-    background-color: rgb(0, 0, 0, 0.1);
+    background-color:var(--hover-color-input);
 }
 
 form label.top {
     display: block;
     padding-top: 1rem;
-    color: #2F22FF;
+    color: var(--blue);
     font-size: .8rem;
 }
 
 form label.top input {
-    -webkit-appearance:none ;
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
@@ -50,7 +49,7 @@ input[type=range] {
 }
 
 #rangevalues {
-    color: #2F22FF;
+    color: var(--blue);
     font-size: 1rem;
     display: flex;
 
@@ -62,18 +61,26 @@ input[type=range] {
 }
 
 #submitBtn:focus{
-    background-color: #fff;
+    background-color:var(--white);
 }
 
 #submitBtn:hover {
-    background-color: #413f3f;
+    background-color: var(--button-background-color);
 }
 
+#messagedisplay {
+    padding-top: 10px;
+    color: red;
+}
+
+.weather, .visits {
+    display: none;
+}
 
 form #submitBtn {
     border: none;
-    background-color: #2F22FF;
-    color: white;
+    background-color: var(--blue);
+    color: var(--white);
     border-radius: 1rem;
     padding: .5rem;
     margin-top: 1rem;

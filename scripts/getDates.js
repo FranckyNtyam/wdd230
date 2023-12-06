@@ -90,36 +90,54 @@ localStorage.setItem("numberOfVisitsLocalStorage", numberOfVisits);
 
 // Check password
 
-const password1 = document.getElementById('password');
-const password2 = document.getElementById('password-repeated');
+const newPassword = document.getElementById('password');
+const confirmPassword = document.getElementById('confirm-password');
 const message = document.getElementById('messagedisplay');
-// password2.addEventListener('focusout', checkSame);
+confirmPassword.addEventListener('focusout', checkSame);
 
 // Create function checkSame
 
 function checkSame() {
-    if (password1.value !== password2.value){
-        message.textContent = "Password is not the same!"
+    if (newPassword.value !== confirmPassword.value){
+        message.textContent = "Password is not the same!";
         message.style.visibility = "show";
-        password2.style.backgroundColor = "red";
-        password2.value = "";
-        password2.focus();
+        confirmPassword.style.backgroundColor = "red";
+        confirmPassword.value = "";
+        confirmPassword.focus();
     } else {
         message.style.display = "none";
-        password2.style.backgroundColor = "#fff";
-        password2.style.color = "#000";
+        confirmPassword.style.backgroundColor = "#fff";
+        confirmPassword.style.color = "#000";
     }
 }
 
 
 // rating
 
-const rangeValue = document.getElementById('rangevalue');
+const rangevalue = document.getElementById('rangevalue');
 const range = document.getElementById('rate');
 
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
 function displayRatingValue(){
-    rangeValue.innerHTML = range.value;
+    rangevalue.innerHTML = range.value;
 }
 
-// range.addEventListener('change', displayRatingValue);
-// range.addEventListener('input', displayRatingValue);
+
+const emailMessage = document.getElementById('emailmessage');
+
+const inputEmail = document.getElementById('email');
+
+if (inputEmail.endsWith("@byui.edu", -9)){
+   inputEmail.
+}else{
+    
+    message.textContent = "Enter the correct email adress like <strong>some@byui.edu</strong>";
+    message.style.visibility = "show";
+    inputEmail.style.backgroundColor = red;
+    inputEmail.value = "";
+    inputEmail.focus();
+    
+}
+
