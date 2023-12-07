@@ -103,7 +103,7 @@ function checkSame() {
         message.style.visibility = "show";
         confirmPassword.style.backgroundColor = "red";
         confirmPassword.value = "";
-        confirmPassword.focus();
+        // confirmPassword.focus();
     } else {
         message.style.display = "none";
         confirmPassword.style.backgroundColor = "#fff";
@@ -129,15 +129,21 @@ const emailMessage = document.getElementById('emailmessage');
 
 const inputEmail = document.getElementById('email');
 
-if (inputEmail.endsWith("@byui.edu", -9)){
-   inputEmail.
-}else{
-    
-    message.textContent = "Enter the correct email adress like <strong>some@byui.edu</strong>";
-    message.style.visibility = "show";
-    inputEmail.style.backgroundColor = red;
-    inputEmail.value = "";
-    inputEmail.focus();
-    
+inputEmail.addEventListener('change', checkGoodEmailValidity);
+function checkGoodEmailValidity(){
+    if (inputEmail.checkValidity()){
+        console.log("Email pattern is correct");
+     }else{
+         
+         emailMessage.innerHTML = "Enter the correct email adress like <em>someone@byui.edu</em>";
+         emailMessage.style.visibility = "show";
+         inputEmail.style.backgroundColor = "red";
+         inputEmail.value = "";
+         //inputEmail.focus();
+         
+     }
 }
+
+
+
 
