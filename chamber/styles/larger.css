@@ -94,6 +94,30 @@
         column-gap: 15px;
     }
 
+    /* Styles of join page */
+
+    #main-join-page {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .membership-benefits {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+         font-size: .8rem;
+         margin: 10px;
+         padding: .5rem 2%;
+          border: 1px solid #445ba9;
+          border-radius: 10px;
+      }
+
+      .form-container  {
+        margin: 10px;
+      }
+
     /* Styles of discover page */
     .main-for-discover-page {
         display: grid;

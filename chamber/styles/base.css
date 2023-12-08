@@ -267,12 +267,49 @@ figcaption{
 
 /* Style join page */
 
-form fieldset {
-    margin: 2rem 0;
+.membership-benefits {
+ display: none;
+}
+.benefit-level h2 {
+    font-size: .9rem;
+    color: #2F22FF;
+
+}
+
+.benefit-level {
     border: 1px solid #445ba9;
     border-radius: 10px;
+    margin: 2rem 0;
     padding: .5rem 2%;
-    background-color: var(--white);
+
+}
+
+.benefit-level ul {
+ padding:1px 0 1px 17px;
+}
+
+.benefit-level ul li {
+    padding: 2px;
+    font-size: .8rem;
+
+}
+
+.membership-benefits .benefit-level:nth-last-child(even) {
+    background-color: hsla(200, 97%, 66%, 0.1);
+  }
+
+.form-container {
+    width: 100%;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    margin: 0px auto 10px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    padding: .5rem 2%;
+    border: none;
+    
 }
 
 form label {
@@ -295,12 +332,19 @@ form label input, select,textarea {
     
 }
 
+.select {
+    text-align: right;
+}
+
 #submitBtn {
-    margin-bottom: 20px;
+    margin: 10px auto 20px;
     padding: 10px;
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    color: #2F22FF;
+    border-radius: 8px;
+    background-color: #2F22FF;
+    color: #FFFFFF;
+   font-size: .9rem;
+    text-align: center;
+    width: auto;
 }
 
 /* Styles directory page */

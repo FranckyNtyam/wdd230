@@ -136,10 +136,12 @@ function checkGoodEmailValidity(){
      }else{
          
          emailMessage.innerHTML = "Enter the correct email adress like <em>someone@byui.edu</em>";
-         emailMessage.style.visibility = "show";
-         inputEmail.style.backgroundColor = "red";
          inputEmail.value = "";
-         //inputEmail.focus();
+         inputEmail.focus();
+
+         if (inputEmail.checkValidity()){
+            emailMessage.style.visibility = "hidden";
+         }
          
      }
 }

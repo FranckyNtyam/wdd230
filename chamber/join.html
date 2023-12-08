@@ -47,8 +47,8 @@
             <li><a href="login">Login</a></li>
         </ul>
     </nav>
-    <main>
-        <form method="get" action="thankyou.html">
+    <main id="main-join-page">
+        <form method="get" action="thankyou.html" class="form-container">
             <fieldset>
                 <label for="firstname">
                     first name
@@ -60,7 +60,7 @@
                 </label>
                 <label for="title-or-po">
                     title or position
-                    <input type="text" id="tipo" name="tipo" pattern="/^([A-Za-z0-9\-\s]$){7,}"
+                    <input type="text" id="tipo" name="tipo" pattern="([A-Za-z0-9\s\-]{7,}"
                         title="text only accept alpha characters, hyphens, and space with a minimum of 7 characters ">
                 </label>
                 <label for="email">
@@ -78,7 +78,7 @@
                 <label for="member-level">
                     membeship level
                     <select name="level">
-                        <option value="">Please Select &#9662;</option>
+                        <option class="select" value="">&#9662;</option>
                         <option value="np">NP Membership is for non profit organizations and there is no fee.</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership
@@ -97,11 +97,55 @@
                     <input type="hidden" id="timestamp" name="timestamp">
                 </label>
             </fieldset>
-
-            <input type="submit" name="button" id="submitBtn" value="Become A New Member">
-
-
+            <label for="submit">
+                <input type="submit" name="button" id="submitBtn" value="Become A New Member">
+            </label>
         </form>
+        <div class="membership-benefits">
+            <div class="benefit-level">
+                <h2>NP Membership is for non profit organizations and there is no fee:</h2>
+                <ul>
+                    <li>Access to networking events, such as business mixers, industry-specific meetups, and social
+                        gatherings.</li>
+                    <li>Opportunities to connect with other business owners, entrepreneurs, and professionals in the
+                        community.</li>
+                    <li>Access to online member directories for networking and collaboration.</li>
+                </ul>
+            </div>
+            <div class="benefit-level">
+                <h2>Bronze Membership:</h2>
+                <ul>
+                    <li>Listing in the Chamber's online business directory, allowing potential customers to find and
+                        connect with member businesses.</li>
+                    <li>Opportunities for business spotlights and features on the Chamber's website, social media, or
+                        newsletters.</li>
+                    <li>Access to marketing resources, such as promotional materials, advertising discounts, and
+                        sponsorship opportunities for Chamber events.
+                    </li>
+                </ul>
+            </div>
+            <div class="benefit-level">
+                <h2>Silver Membership:</h2>
+                <ul>
+                    <li>Representation on local, regional, or national issues affecting businesses, with the Chamber
+                        acting as an advocate for members' interests.</li>
+                    <li>Access to government officials, policymakers, and community leaders through Chamber-led
+                        initiatives and events.</li>
+                    <li>Involvement in shaping local economic development and business-friendly policies.</li>
+                </ul>
+            </div>
+            <div class="benefit-level">
+                <h2>Gold Membership:</h2>
+                <ul>
+                    <li>Workshops, seminars, and webinars on various topics pertinent to business growth, such as
+                        marketing, finance, leadership, and technology.</li>
+                    <li>Training programs and resources to enhance skills and knowledge, including business coaching,
+                        mentorship programs, and industry-specific certifications.</li>
+                    <li>Access to industry reports, market research, and business intelligence to stay informed about
+                        relevant trends and opportunities.</li>
+                </ul>
+            </div>
+        </div>
 
     </main>
     <footer>
