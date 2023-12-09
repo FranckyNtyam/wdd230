@@ -50,15 +50,16 @@
     <main id="main-join-page">
         <form method="get" action="thankyou.html" class="form-container">
             <fieldset>
-                <label for="firstname">
+                <legend>Member Registration</legend>
+                <label for="fname">
                     first name
                     <input type="text" id="fname" name="fname" required>
                 </label>
-                <label for="lastname">
+                <label for="lname">
                     last name
                     <input type="text" id="lname" name="lname" required>
                 </label>
-                <label for="title-or-po">
+                <label for="tipo">
                     title or position
                     <input type="text" id="tipo" name="tipo" pattern="([A-Za-z0-9\s\-]{7,}"
                         title="text only accept alpha characters, hyphens, and space with a minimum of 7 characters ">
@@ -67,15 +68,15 @@
                     email address
                     <input type="email" id="email" name="email" placeholder="someone@gmail.com" required>
                 </label>
-                <label for="phone-number">
+                <label for="phone">
                     mobile phone number
-                    <input type="telephone" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" required>
                 </label>
-                <label for="business-org">
+                <label for="businessname">
                     business/organization's name
                     <input type="text" id="businessname" name="businessname" required>
                 </label>
-                <label for="member-level">
+                <label >
                     membeship level
                     <select name="level">
                         <option class="select" value="">&#9662;</option>
@@ -86,20 +87,20 @@
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
-                <label for="business-org-desc">
+                <label for="description">
                     business/organisation' description
-                    <textarea id="description" name="description">
-                    describe your organisation...
+                    <textarea id="description" name="description" rows="10" cols="10" placeholder="describe your organisation...">
+                    
                 </textarea>
                 </label>
-                <label for="timestamp">
+                <label>
                     timestamp
                     <input type="hidden" id="timestamp" name="timestamp">
                 </label>
             </fieldset>
-            <label for="submit">
-                <input type="submit" name="button" id="submitBtn" value="Become A New Member">
-            </label>
+            <label class="submit-btn">submit button</label>
+                <input type="submit" name="button" id="submitBtn" value="Become A New Member" placeholder="submit button">
+            
         </form>
         <div class="membership-benefits">
             <div class="benefit-level">

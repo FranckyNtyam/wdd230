@@ -320,7 +320,6 @@ form label {
 }
 
 form label input, select,textarea {
-    -webkit-appearance:none ;
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
@@ -332,12 +331,21 @@ form label input, select,textarea {
     
 }
 
+.form-container legend {
+    text-align: center;
+    color: #2F22FF;
+} 
+
 .select {
     text-align: right;
 }
 
-#submitBtn {
-    margin: 10px auto 20px;
+.submit-btn {
+    display: none;
+}
+
+.form-container #submitBtn {
+    margin: 10px 50px 10px 80px;
     padding: 10px;
     border-radius: 8px;
     background-color: #2F22FF;
