@@ -136,6 +136,10 @@ nav {
     justify-content: center;
 }
 
+.main-home-page .cards, .menu {
+    display: none;
+}
+
 .hero-image {
     position: relative;
 }

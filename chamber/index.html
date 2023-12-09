@@ -68,10 +68,13 @@
 
         <section class="weather">
             <h3>Weather</h3>
-            <div class="icon">---</div>
-            <div class="temp">- ºC</div>
-            <div class="summary">----</div>
-            <div class="location"></div>
+            <div class="weather">
+                <h4 class="city-name"></h4>
+                <img id="weather-icon" src="#" alt="icon weather">
+                <p><span id="current-temp"></span> </p>
+                <p><span id="desc-condition"></span> </p>
+            </div>
+            <div class="forecast"></div>
         </section>
 
        
@@ -114,6 +117,11 @@
                         You will always be one step ahead of the competition when you work with us.
                     </figcaption>
                 </figure>
+            </div>
+            <div class="cards"></div>
+            <div class="menu">
+                <button id="grid"><img src="images/grid.webp" alt="grid icon" ></button>
+                <button id="list"><img src="images/list.webp" alt="list icon"></button>
             </div>
        
     </main>

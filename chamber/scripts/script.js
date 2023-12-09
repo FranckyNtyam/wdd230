@@ -127,3 +127,88 @@ numberOfVisits++;
 
 localStorage.setItem("numberOfVisitsLocalStorage", numberOfVisits);
 
+// Weather
+
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const descOfCurrentCondition = document.querySelector('#desc-condition');
+const cityName = document.querySelector('.city-name');
+
+const urlWeather ='https://api.openweathermap.org/data/2.5/weather?lat=3.866667&lon=11.516667&units=imperial&appid=97e376ece890dc55e4b12dd2017ec611';
+
+async function apiFetch() {
+  try {  
+  const response = await fetch(urlWeather);
+  if (response.ok){
+    const data = await response.json();
+    displayResults(data);
+
+    console.log(data);
+  }else {
+    throw Error(await response.text());
+  }
+  
+  }
+    catch (error) {
+        console.log(error);
+    }
+    
+  }
+  
+
+
+apiFetch();
+
+const displayResults = (data) => {
+
+
+        cityName.innerHTML = `${data.name}`;
+        currentTemp.innerHTML = `${data.main.temp} &deg;F`;
+    
+        const iconsrc =`https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+        
+        descOfCurrentCondition.textContent = data.weather[0].description;
+        weatherIcon.setAttribute('src', iconsrc);
+        weatherIcon.setAttribute('width', '60');
+        weatherIcon.setAttribute('height', '60');
+}
+
+// const urlForecast ='https://api.openweathermap.org/data/2.5/forecast?lat=3.866667&lon=11.516667&units=imperial&appid=97e376ece890dc55e4b12dd2017ec611';
+
+// const forecast = document.querySelector('.forecast');
+
+// async function getProphetData() {
+//     const response = await fetch(urlForecast);
+//     const data = await response.json();
+//     // console.table(data);
+//      displayProphets(data);
+// }
+
+// const displayProphets = (data) => {
+//     prophets.forEach(() => {
+//     let card = document.createElement('section');
+//     let fullName = document.createElement('h2');
+//     let portrait = document.createElement('img');
+//     let birthdate = document.createElement('p');
+//     let placebirth = document.createElement('p');
+
+//     fullName.textContent = ` ${prophet.name} ${prophet.lastname}`;
+//     birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
+//     placebirth.textContent = `Place of Birth: ${prophet.birthplace}`;
+//     portrait.setAttribute('src', prophet.imageurl);
+//     portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+//     portrait.setAttribute('loading', 'lazy');
+//     portrait.setAttribute('width', '300');
+//     portrait.setAttribute('height', '400');
+
+//     card.appendChild(fullName);
+//     card.appendChild(birthdate);
+//     card.appendChild(placebirth);
+//     card.appendChild(portrait);
+
+//     cards.appendChild(card);
+//     // card.style.backgroundColor = '#658ddd'
+//     });
+// }
+
+// getProphetData(url);
