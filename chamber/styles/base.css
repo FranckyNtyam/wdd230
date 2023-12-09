@@ -375,14 +375,14 @@ form label input, select,textarea {
     background-color: #2F22FF;
 }
  
-.cards {
+.cards, .spotlights {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     justify-content: center;
     
 }
 
-.cards img{
+.cards img, .spotlights img{
     max-width: 100%;
     height: auto;
 
@@ -391,12 +391,12 @@ form label input, select,textarea {
     display: none;
 }
 
-.cards section, .list section {
+.cards section, .list section, .spotlights section {
     margin: 20px;
     padding: 20px;
 }
 
-.cards section {
+.cards section, .spotlights section {
     box-shadow: 10px 10px hsl(0, 0%, 20%, 0.1);
 }
 
@@ -420,7 +420,7 @@ form label input, select,textarea {
     color: #2F22FF;
 }
 
-.cards section h2 {
+.cards section h2, .spotlights section h2 {
     font-size: 1.2rem;
     margin: 10px;
 }
@@ -429,7 +429,7 @@ form label input, select,textarea {
     font-size: 1rem;
 }
 
-.cards p {
+.cards p, .spotlights p{
     padding: 5px;
     font-weight: 10;
 }

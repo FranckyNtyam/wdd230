@@ -23,11 +23,11 @@ document.querySelector('#lastModified').innerHTML = "last modification: " + date
 const url ="https://franckyntyam.github.io/wdd230/chamber/data/members.json";
 
 const cards = document.querySelector('.cards');
-
+const spotlights = document.querySelector('.spotlights');
 async function getCompanyData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    // console.table(data.prophets);
+    console.table(data.companies);
      displayCompany(data.companies);
 }
 
@@ -60,10 +60,16 @@ const displayCompany = (companies) => {
     card.appendChild(website);
     card.appendChild(membersLevel);
     card.appendChild(location);
-
+    let level = company.level;
 
     cards.appendChild(card);
-    // card.style.backgroundColor = '#658ddd'
+    console.log(level);
+    if (level =="Silver Membership" || level == "Gold Member"){
+       
+        spotlights.appendChild(card);
+    }
+    
+    
     });
 }
 
@@ -173,42 +179,45 @@ const displayResults = (data) => {
         weatherIcon.setAttribute('height', '60');
 }
 
-// const urlForecast ='https://api.openweathermap.org/data/2.5/forecast?lat=3.866667&lon=11.516667&units=imperial&appid=97e376ece890dc55e4b12dd2017ec611';
+const urlForecast ='https://api.openweathermap.org/data/2.5/forecast?lat=3.866667&lon=11.516667&units=imperial&appid=97e376ece890dc55e4b12dd2017ec611';
 
-// const forecast = document.querySelector('.forecast');
+const forecast = document.querySelector('.forecast');
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-// async function getProphetData() {
-//     const response = await fetch(urlForecast);
-//     const data = await response.json();
-//     // console.table(data);
-//      displayProphets(data);
-// }
+async function getForecastData() {
+    const response = await fetch(urlForecast);
+    const data = await response.json();
+    console.table(data);
+     displayForecast(data);
+}
 
-// const displayProphets = (data) => {
-//     prophets.forEach(() => {
-//     let card = document.createElement('section');
-//     let fullName = document.createElement('h2');
-//     let portrait = document.createElement('img');
-//     let birthdate = document.createElement('p');
-//     let placebirth = document.createElement('p');
+const displayForecast = (data) => {
+    
+    let forecastSeconday = document.createElement('p');
+    let forecastThirday = document.createElement('p');
+    let forecastForthday = document.createElement('p');
+    let weatherIconForecast = document.createElement('img');
+    const iconforecast = `https://openweathermap.org/img/w/${data.list[4].weather[0].icon}.png`;
+    const daysF1 = new Date(data.list[4].dt_txt);
+    const daysF2 = new Date(data.list[12].dt_txt);
+    const daysF3 = new Date(data.list[20].dt_txt);
+    forecastSeconday.innerHTML = `${weekday[daysF1.getDay()]}: ${data.list[4].main.temp} &deg;F`;
+    forecastThirday.innerHTML = `${weekday[daysF2.getDay()]}: ${data.list[12].main.temp} &deg;F`;
+    forecastForthday.innerHTML = `${weekday[daysF3.getDay()]}: ${data.list[20].main.temp} &deg;F`;
+    forecast.appendChild(forecastSeconday);
+    forecast.appendChild(weatherIconForecast);
+    forecast.appendChild(forecastThirday);
+    forecast.appendChild(forecastForthday);
+    
 
-//     fullName.textContent = ` ${prophet.name} ${prophet.lastname}`;
-//     birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
-//     placebirth.textContent = `Place of Birth: ${prophet.birthplace}`;
-//     portrait.setAttribute('src', prophet.imageurl);
-//     portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
-//     portrait.setAttribute('loading', 'lazy');
-//     portrait.setAttribute('width', '300');
-//     portrait.setAttribute('height', '400');
+    console.log(weekday[daysF1.getDay()]);
+    
 
-//     card.appendChild(fullName);
-//     card.appendChild(birthdate);
-//     card.appendChild(placebirth);
-//     card.appendChild(portrait);
+    weatherIconForecast.setAttribute('src', iconforecast);
+    weatherIconForecast.setAttribute('width', '60');
+    weatherIconForecast.setAttribute('height', '60');
+   
+    
+}
 
-//     cards.appendChild(card);
-//     // card.style.backgroundColor = '#658ddd'
-//     });
-// }
-
-// getProphetData(url);
+getForecastData();
