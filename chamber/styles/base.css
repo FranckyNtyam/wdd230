@@ -136,8 +136,35 @@ nav {
     justify-content: center;
 }
 
+.spotlights section:nth-last-child(even) {
+    display: none;
+  }
+
 .main-home-page .cards, .menu {
     display: none;
+}
+
+.main-home-page #banner {
+    display: none;
+    padding: 15x;
+    margin: 0 20px;
+    background-color: hsla(245, 93%, 49%, 0.5);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.main-home-page #banner p {
+    padding: 15px;
+}
+.main-home-page #close-btn {
+    cursor: pointer;
+    color: #fff;
+    float: right;
+    
+}
+
+.main-home-page #current-temp, #desc-condition {
+    color: #2F22FF;
 }
 
 .hero-image {
@@ -184,37 +211,35 @@ margin: 20px;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    margin: 20px;
+   
 }
 
-.spotligth-first-company img{
+/* .spotligth-first-company img{
      width: 100%;
-     margin: 20px;
+     margin: 10px;
 }
 
 .spotligth-second-company img{
     width: 100%;
-    margin: 20px;
+    margin: 10px;
    
 }
 .spotligth-third-company img{
-   
-    margin: 20px;
-    
-}
-figure {
+   width: 100%;
+} */
+/* figure {
     border: 1px solid #343434;
     border-radius: 15px 15px;
     margin-bottom: 10px;
-}
+} */
 
-figcaption{
+/* figcaption{
     margin: 20px;
     text-align: center;
     background-color: #343434;
     color: #FFFFFF;
     border-radius: 15px 15px;
-}
+} */
 
 /* Style main for discover page */
 
@@ -416,7 +441,7 @@ form label input, select,textarea {
 }
 
 
-.main-directory-page h2 {
+.main-directory-page h2, .spotlights h2 {
     color: #2F22FF;
 }
 

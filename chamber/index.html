@@ -48,6 +48,11 @@
         </ul>
     </nav>
     <main class="main-home-page">  
+        <div id="banner">
+            <span id="close-btn" onclick="closeBanner()">❌</span>
+            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+           
+        </div>
         <section class="hero-image">
             <img src="images/yaounde.webp" alt="yaounde city image">
             <h2>Welcome to Yaounde</h2>
@@ -69,12 +74,15 @@
         <section class="weather">
             <h3>Weather</h3>
             <div class="weather">
-                <h4 class="city-name"></h4>
-                <img id="weather-icon" src="#" alt="icon weather">
-                <p><span id="current-temp"></span> </p>
-                <p><span id="desc-condition"></span> </p>
+                <div class="icon-weather">
+                    <h4 class="city-name"></h4>
+                    <img id="weather-icon" src="#" alt="icon weather">
+                    <p><span id="current-temp"></span> </p>
+                    <p><span id="desc-condition"></span> </p>
+                </div>
+                <div class="forecast"></div>
             </div>
-            <div class="forecast"></div>
+            
         </section>
 
         <div class="spotlights"></div>

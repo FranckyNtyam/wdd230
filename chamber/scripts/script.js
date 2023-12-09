@@ -24,6 +24,8 @@ const url ="https://franckyntyam.github.io/wdd230/chamber/data/members.json";
 
 const cards = document.querySelector('.cards');
 const spotlights = document.querySelector('.spotlights');
+const numbersOfSpot = 3;
+const spotlightArray = [];
 async function getCompanyData(url) {
     const response = await fetch(url);
     const data = await response.json();
@@ -41,7 +43,7 @@ const displayCompany = (companies) => {
     let website = document.createElement('p');
     let membersLevel = document.createElement('p');
     let location = document.createElement('p');
-
+   
     companyName.textContent = ` ${company.name}`;
     adress.textContent = `Adress: ${company.adress}`;
     phoneNumber.textContent = `Phone Numbers: ${company.phone}`;
@@ -63,11 +65,32 @@ const displayCompany = (companies) => {
     let level = company.level;
 
     cards.appendChild(card);
-    console.log(level);
-    if (level =="Silver Membership" || level == "Gold Member"){
+
+   
+   
+    
+    
+    if (level =="Silver Member" || level == "Gold Member"){
        
-        spotlights.appendChild(card);
+        spotlightArray.push(card);
+        spotlights.innerHTML = "";
+         console.log(spotlightArray);
+         for (let i = spotlightArray.length-1; i>0; i--){
+           let ran = Math.floor(Math.random() * (i + 1));
+           let j = spotlightArray[i];
+           spotlightArray[i] = spotlightArray[ran];
+           spotlightArray[ran] = j;
+           console.log(spotlightArray);
+         }
+        
+        spotlightArray.forEach(spotlight => {
+            spotlights.appendChild(spotlight);
+        });
+       
+       
+       
     }
+
     
     
     });
@@ -196,28 +219,39 @@ const displayForecast = (data) => {
     let forecastSeconday = document.createElement('p');
     let forecastThirday = document.createElement('p');
     let forecastForthday = document.createElement('p');
-    let weatherIconForecast = document.createElement('img');
-    const iconforecast = `https://openweathermap.org/img/w/${data.list[4].weather[0].icon}.png`;
+    
+    
     const daysF1 = new Date(data.list[4].dt_txt);
     const daysF2 = new Date(data.list[12].dt_txt);
     const daysF3 = new Date(data.list[20].dt_txt);
+    
     forecastSeconday.innerHTML = `${weekday[daysF1.getDay()]}: ${data.list[4].main.temp} &deg;F`;
     forecastThirday.innerHTML = `${weekday[daysF2.getDay()]}: ${data.list[12].main.temp} &deg;F`;
     forecastForthday.innerHTML = `${weekday[daysF3.getDay()]}: ${data.list[20].main.temp} &deg;F`;
+
     forecast.appendChild(forecastSeconday);
-    forecast.appendChild(weatherIconForecast);
     forecast.appendChild(forecastThirday);
     forecast.appendChild(forecastForthday);
     
 
     console.log(weekday[daysF1.getDay()]);
     
-
-    weatherIconForecast.setAttribute('src', iconforecast);
-    weatherIconForecast.setAttribute('width', '60');
-    weatherIconForecast.setAttribute('height', '60');
    
     
 }
 
 getForecastData();
+
+// Create banner
+
+const banner = document.getElementById('banner');
+const currentDate = new Date();
+const weekDay = currentDate.getDay();
+
+const closeBanner = () => {
+    banner.style.display = 'none';
+};
+
+if (weekDay >= 1 && weekDay <= 6) {
+    banner.style.display = 'block';
+}
