@@ -51,8 +51,8 @@ const displayCompany = (companies) => {
         images.setAttribute('src', company.image);
         images.setAttribute('alt', `Portrait of ${company.name} `);
         images.setAttribute('loading', 'lazy');
-        images.setAttribute('width', '300');
-        images.setAttribute('height', '400');
+        images.setAttribute('width', '475');
+        images.setAttribute('height', '300');
         card.appendChild(images);
         card.appendChild(companyName);
         card.appendChild(adress);
