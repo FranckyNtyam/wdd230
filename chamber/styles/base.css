@@ -140,7 +140,7 @@ nav {
     display: none;
   }
 
-.main-home-page .cards, .main-home-page  .menu {
+.main-home-page .cards, .main-home-page  .menu , .main-home-page .visits{
     display: none;
 }
 
