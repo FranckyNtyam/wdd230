@@ -48,16 +48,16 @@
         </ul>
     </nav>
     <main id="main-join-page">
-        <form method="get" action="thankyou.html" class="form-container">
+        <form method="get" action="thankyou.html" class="form-container" autocomplete="on">
             <fieldset>
                 <legend>Member Registration</legend>
                 <label for="fname">
                     first name
-                    <input type="text" id="fname" name="fname" autocomplete="first name" required>
+                    <input type="text" id="fname" name="fname" autocomplete="on" required>
                 </label>
                 <label for="lname">
                     last name
-                    <input type="text" id="lname" name="lname" autocomplete="last name" required>
+                    <input type="text" id="lname" name="lname" autocomplete="on" required>
                 </label>
                 <label for="tipo">
                     title or position
@@ -66,20 +66,20 @@
                 </label>
                 <label for="email">
                     email address
-                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" autocomplete="email" required>
+                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" autocomplete="on" required>
                 </label>
                 <label for="phone">
                     mobile phone number
-                    <input type="tel" id="phone" name="phone" autocomplete="phone" required>
+                    <input type="tel" id="phone" name="phone" autocomplete="on" required>
                 </label>
                 <label for="businessname">
                     business/organization's name
-                    <input type="text" id="businessname" name="businessname" autocomplete="business name" required>
+                    <input type="text" id="businessname" name="businessname" autocomplete="on" required>
                 </label>
                 <label >
                     membeship level
                     <select name="level">
-                        <option class="select" value="">&#9662;</option>
+                        <option class="select" value="">Select please...</option>
                         <option value="np">NP Membership is for non profit organizations and there is no fee.</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership
