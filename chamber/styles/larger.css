@@ -153,7 +153,9 @@
     .gallery img:hover {
        opacity: 0.5;
     }
-
+   .main-for-discover-page #banner {
+    display: none;
+   }
     /* style of directory page */
 
     .list {

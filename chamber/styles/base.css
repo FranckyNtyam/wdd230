@@ -306,7 +306,9 @@ figcaption{
     text-decoration: none;
     text-align: center;
 }
-
+.main-for-discover-page .spotlights, .main-for-discover-page .cards, .main-for-discover-page .menu, .main-for-discover-page .forecast, .main-for-discover-page .icon-weather, .main-for-discover-page #banner {
+    display: none;
+}
 /* Style join page */
 
 .membership-benefits {
@@ -395,6 +397,10 @@ form label input, select,textarea {
    font-size: .9rem;
     text-align: center;
     width: auto;
+}
+
+#main-join-page .spotlights, #main-join-page .cards, #main-join-page .menu, #main-join-page .forecast, #main-join-page .icon-weather, #main-join-page #banner {
+    display: none;
 }
 
 /* Styles directory page */

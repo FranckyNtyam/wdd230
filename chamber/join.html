@@ -53,28 +53,28 @@
                 <legend>Member Registration</legend>
                 <label for="fname">
                     first name
-                    <input type="text" id="fname" name="fname" required>
+                    <input type="text" id="fname" name="fname" autocomplete="first name" required>
                 </label>
                 <label for="lname">
                     last name
-                    <input type="text" id="lname" name="lname" required>
+                    <input type="text" id="lname" name="lname" autocomplete="last name" required>
                 </label>
                 <label for="tipo">
                     title or position
                     <input type="text" id="tipo" name="tipo" pattern="([A-Za-z0-9\s\-]{7,}"
-                        title="text only accept alpha characters, hyphens, and space with a minimum of 7 characters ">
+                        title="text only accept alpha characters, hyphens, and space with a minimum of 7 characters "> 
                 </label>
                 <label for="email">
                     email address
-                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" required>
+                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" autocomplete="email" required>
                 </label>
                 <label for="phone">
                     mobile phone number
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" autocomplete="phone" required>
                 </label>
                 <label for="businessname">
                     business/organization's name
-                    <input type="text" id="businessname" name="businessname" required>
+                    <input type="text" id="businessname" name="businessname" autocomplete="business name" required>
                 </label>
                 <label >
                     membeship level
@@ -93,12 +93,12 @@
                     
                 </textarea>
                 </label>
-                <label>
+                <label for="timestamp">
                     timestamp
                     <input type="hidden" id="timestamp" name="timestamp">
                 </label>
             </fieldset>
-            <label class="submit-btn">submit button</label>
+            <label class="submit-btn" for="submitBtn">submit button</label>
                 <button type="submit" id="submitBtn">Become A New Member</button>
             
         </form>
@@ -147,7 +147,17 @@
                 </ul>
             </div>
         </div>
+        <div class="menu">
+            <button id="grid"><img src="images/grid.webp" alt="grid icon" ></button>
+            <button id="list"><img src="images/list.webp" alt="list icon"></button>
+        </div>
 
+        <div class="cards"></div>
+        <div class="spotlights"></div>
+        <div id="banner">
+            <span id="close-btn" onclick="closeBanner()"></span>
+        </div>
+        <div class="forecast"></div>
     </main>
     <footer>
         <p class="copyrigth">&copy;Copyrigth<span id="year"></span> 🌺 Yaounde Chamber of Commerce 🌺 </p>
