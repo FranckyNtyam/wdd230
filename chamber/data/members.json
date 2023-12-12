@@ -5,7 +5,7 @@
             "adress":"275 Douala",
             "phone": "(+237) 33376680",
             "website":"www.chococam.net",
-            "image": "https://promouvoircompetences.com/images/galerie/1-1658916930.jpg",
+            "image": "./images/chococam.webp",
             "level":"Silver Member",
             "location": "Douala"
         },
