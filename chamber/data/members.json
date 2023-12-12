@@ -14,7 +14,7 @@
             "adress":"8202 DOUALA",
             "phone": "(+237) 33471891/33471892",
             "website":"wwwepacameroun.com",
-            "image": "https://epa-sa.com/wp-content/uploads/2017/06/potatos_small.png",
+            "image": "./images/epas.webp",
             "level":"Gold Member",
             "location": "Douala"
         },
@@ -23,7 +23,7 @@
             "adress":"5483 DOUALA",
             "phone": "(+237) 33430501/77560413",
             "website":" www.pamolplantation.com",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrAZsFZ6qyXf6yFVQ7cwYF0ec9GuAtCrD7S_WAHC5oxfzdsi3vxkFrDnAPtRbNlF_KLM&usqp=CAU",
+            "image": "./images/pamol.webp",
             "level":"Silver Member",
             "location": "Douala"
         },
@@ -32,7 +32,7 @@
             "adress":"14717 YAOUNDE",
             "phone": "(+237) 22013306/22202511",
             "website":"http://www.arabcont.com/",
-            "image": "https://www.shutterstock.com/image-photo/close-civil-male-engineer-asian-600nw-755856148.jpg",
+            "image": "./images/arab.webp",
             "level":"Gold Member",
             "location": "Yaounde"
         },
@@ -41,7 +41,7 @@
             "adress":"11306 YAOUNDE",
             "phone": "22220306/22220780",
             "website":"http://www.razel.fr/",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPKmpIFjVsgzxndS4GwSF8MVk0fE6UQqxDrYANfMY90Q&s",
+            "image": "./images/razel.webp",
             "level":"Silver Member",
             "location": "Yaounde"
         },
@@ -50,7 +50,7 @@
             "adress":"limbe",
             "phone": "33431883/33332251",
             "website":"http://www.cdc_cameroon.c/",
-            "image": "https://image.jimcdn.com/app/cms/image/transf/none/path/s1084e755aa436055/image/i36e4b160b889e12b/version/1681980911/image.jpg",
+            "image": "./images/cdc.webp",
             "level":"Gold Member",
             "location": "Limbe"
         },
@@ -59,7 +59,7 @@
             "adress":"157 DOUALA",
             "phone": "33439980/33439981",
             "website":"http://www.la-cde.com/",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFui8um7OjjAya1kFinxVakbH--VW6UCuEh7gPsQivMQ&s",
+            "image": "./images/camwater.webp",
             "level":"Bronze Member",
             "location": "Douala"
         }
