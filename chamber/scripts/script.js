@@ -1,4 +1,3 @@
-
 // create hamburger button
 const hambergerButton = document.querySelector('#buttonMenu');
 const navigation = document.querySelector('.navigation');
@@ -20,82 +19,117 @@ document.querySelector('#lastModified').innerHTML = "last modification: " + date
 
 // Member information
 
-const url ="https://franckyntyam.github.io/wdd230/chamber/data/members.json";
+const url = "https://franckyntyam.github.io/wdd230/chamber/data/members.json";
 
 const cards = document.querySelector('.cards');
 const spotlights = document.querySelector('.spotlights');
-const numbersOfSpot = 3;
 const spotlightArray = [];
 async function getCompanyData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.companies);
-     displayCompany(data.companies);
+    displaySpotlight(data.companies);
+    displayCompany(data.companies);
 }
 
 const displayCompany = (companies) => {
     companies.forEach((company) => {
-    let card = document.createElement('section');
-    let companyName = document.createElement('h2');
-    let adress = document.createElement('p');
-    let phoneNumber = document.createElement('p');
-    let images = document.createElement('img');
-    let website = document.createElement('p');
-    let membersLevel = document.createElement('p');
-    let location = document.createElement('p');
-   
-    companyName.textContent = ` ${company.name}`;
-    adress.textContent = `Adress: ${company.adress}`;
-    phoneNumber.textContent = `Phone Numbers: ${company.phone}`;
-    website.innerHTML = `Website : ${company.website}`;
-    membersLevel.innerHTML = `Member Level: ${company.level}`;
-    location.textContent = `Location: ${company.location}`;
-    images.setAttribute('src', company.image);
-    images.setAttribute('alt', `Portrait of ${company.name} `);
-    images.setAttribute('loading', 'lazy');
-    images.setAttribute('width', '300');
-    images.setAttribute('height', '400');
-    card.appendChild(images);
-    card.appendChild(companyName);
-    card.appendChild(adress);
-    card.appendChild(phoneNumber);
-    card.appendChild(website);
-    card.appendChild(membersLevel);
-    card.appendChild(location);
-    let level = company.level;
+        let card = document.createElement('section');
+        let companyName = document.createElement('h2');
+        let adress = document.createElement('p');
+        let phoneNumber = document.createElement('p');
+        let images = document.createElement('img');
+        let website = document.createElement('p');
+        let membersLevel = document.createElement('p');
+        let location = document.createElement('p');
 
-    cards.appendChild(card);
+        companyName.textContent = ` ${company.name}`;
+        adress.textContent = `Adress: ${company.adress}`;
+        phoneNumber.textContent = `Phone Numbers: ${company.phone}`;
+        website.innerHTML = `Website : ${company.website}`;
+        membersLevel.innerHTML = `Member Level: ${company.level}`;
+        location.textContent = `Location: ${company.location}`;
+        images.setAttribute('src', company.image);
+        images.setAttribute('alt', `Portrait of ${company.name} `);
+        images.setAttribute('loading', 'lazy');
+        images.setAttribute('width', '300');
+        images.setAttribute('height', '400');
+        card.appendChild(images);
+        card.appendChild(companyName);
+        card.appendChild(adress);
+        card.appendChild(phoneNumber);
+        card.appendChild(website);
+        card.appendChild(membersLevel);
+        card.appendChild(location);
+        cards.appendChild(card);
 
-   
-   
-    
-    
-    if (level =="Silver Member" || level == "Gold Member"){
-       
-        spotlightArray.push(card);
-        spotlights.innerHTML = "";
-         console.log(spotlightArray);
-         for (let i = spotlightArray.length-1; i>0; i--){
-           let ran = Math.floor(Math.random() * (i + 1));
-           let j = spotlightArray[i];
-           spotlightArray[i] = spotlightArray[ran];
-           spotlightArray[ran] = j;
-           console.log(spotlightArray);
-         }
-        
-        spotlightArray.forEach(spotlight => {
-            spotlights.appendChild(spotlight);
-        });
-       
-       
-       
-    }
 
-    
-    
+
     });
 }
 
+
+const displaySpotlight = (companies) => {
+    companies.forEach((company) => {
+        let card = document.createElement('section');
+        let companyName = document.createElement('h2');
+        let adress = document.createElement('p');
+        let phoneNumber = document.createElement('p');
+        let images = document.createElement('img');
+        let website = document.createElement('p');
+        let membersLevel = document.createElement('p');
+        let location = document.createElement('p');
+
+        companyName.textContent = ` ${company.name}`;
+        adress.textContent = `Adress: ${company.adress}`;
+        phoneNumber.textContent = `Phone Numbers: ${company.phone}`;
+        website.innerHTML = `Website : ${company.website}`;
+        membersLevel.innerHTML = `Member Level: ${company.level}`;
+        location.textContent = `Location: ${company.location}`;
+        images.setAttribute('src', company.image);
+        images.setAttribute('alt', `Portrait of ${company.name} `);
+        images.setAttribute('loading', 'lazy');
+        images.setAttribute('width', '300');
+        images.setAttribute('height', '400');
+        card.appendChild(images);
+        card.appendChild(companyName);
+        card.appendChild(adress);
+        card.appendChild(phoneNumber);
+        card.appendChild(website);
+        card.appendChild(membersLevel);
+        card.appendChild(location);
+
+
+        let level = company.level;
+
+
+
+
+
+        if (level == "Silver Member" || level == "Gold Member") {
+
+            spotlightArray.push(card);
+            spotlights.innerHTML = "";
+            console.log(spotlightArray);
+            for (let i = spotlightArray.length - 1; i > 0; i--) {
+                let ran = Math.floor(Math.random() * (i + 1));
+                let j = spotlightArray[i];
+                spotlightArray[i] = spotlightArray[ran];
+                spotlightArray[ran] = j;
+                console.log(spotlightArray);
+            }
+
+            spotlightArray.forEach(spotlight => {
+                spotlights.appendChild(spotlight);
+            });
+
+
+
+        }
+
+
+
+    });
+}
 getCompanyData(url);
 
 // Toggle grid or list
@@ -104,16 +138,16 @@ const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
 const display = document.querySelector('.cards');
 
-gridButton.addEventListener('click', () =>{
+gridButton.addEventListener('click', () => {
     display.classList.add("cards");
     display.classList.remove("list");
 });
 
 listButton.addEventListener('click', showList);
 
-function showList(){
+function showList() {
     display.classList.add("list");
-    display.classList.remove("cards"); 
+    display.classList.remove("cards");
 }
 
 
@@ -130,22 +164,19 @@ let numberOfVisits = Number(window.localStorage.getItem('numberOfVisitsLocalStor
 // We determine if is the first visit or display the number of visits.
 
 if (numberOfVisits == 0) {
-    displayVisitsNumber.textContent =`Welcome! Let us know if you have any questions.`;
-    
-}
-else if (numberOfVisits !== 0 && numberOfVisits < Date.now() ){
+    displayVisitsNumber.textContent = `Welcome! Let us know if you have any questions.`;
+
+} else if (numberOfVisits !== 0 && numberOfVisits < Date.now()) {
 
     // displayVisitsNumber.textContent ="Back so soon! Awesome!";
 
-}
-else {
-    if (numberOfVisits == Date.now()){
+} else {
+    if (numberOfVisits == Date.now()) {
         displayVisitsNumber.textContent = `You last visited ${numberOfVisits} day ago.`;
-    }
-    else{
+    } else {
         displayVisitsNumber.textContent = `You last visited ${numberOfVisits} days ago.`;
     }
-    
+
 }
 
 // increment number of visits by one.
@@ -163,27 +194,26 @@ const weatherIcon = document.querySelector('#weather-icon');
 const descOfCurrentCondition = document.querySelector('#desc-condition');
 const cityName = document.querySelector('.city-name');
 
-const urlWeather ='https://api.openweathermap.org/data/2.5/weather?lat=3.866667&lon=11.516667&units=imperial&appid=97e376ece890dc55e4b12dd2017ec611';
+const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?lat=3.866667&lon=11.516667&units=imperial&appid=97e376ece890dc55e4b12dd2017ec611';
 
 async function apiFetch() {
-  try {  
-  const response = await fetch(urlWeather);
-  if (response.ok){
-    const data = await response.json();
-    displayResults(data);
+    try {
+        const response = await fetch(urlWeather);
+        if (response.ok) {
+            const data = await response.json();
+            displayResults(data);
 
-    console.log(data);
-  }else {
-    throw Error(await response.text());
-  }
-  
-  }
-    catch (error) {
+            console.log(data);
+        } else {
+            throw Error(await response.text());
+        }
+
+    } catch (error) {
         console.log(error);
     }
-    
-  }
-  
+
+}
+
 
 
 apiFetch();
@@ -191,40 +221,40 @@ apiFetch();
 const displayResults = (data) => {
 
 
-        cityName.innerHTML = `${data.name}`;
-        currentTemp.innerHTML = `${data.main.temp} &deg;F`;
-    
-        const iconsrc =`https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-        
-        descOfCurrentCondition.textContent = data.weather[0].description;
-        weatherIcon.setAttribute('src', iconsrc);
-        weatherIcon.setAttribute('width', '60');
-        weatherIcon.setAttribute('height', '60');
+    cityName.innerHTML = `${data.name}`;
+    currentTemp.innerHTML = `${data.main.temp} &deg;F`;
+
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+
+    descOfCurrentCondition.textContent = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('width', '60');
+    weatherIcon.setAttribute('height', '60');
 }
 
-const urlForecast ='https://api.openweathermap.org/data/2.5/forecast?lat=3.866667&lon=11.516667&units=imperial&appid=97e376ece890dc55e4b12dd2017ec611';
+const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=3.866667&lon=11.516667&units=imperial&appid=97e376ece890dc55e4b12dd2017ec611';
 
 const forecast = document.querySelector('.forecast');
-const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 async function getForecastData() {
     const response = await fetch(urlForecast);
     const data = await response.json();
-    console.table(data);
-     displayForecast(data);
+
+    displayForecast(data);
 }
 
 const displayForecast = (data) => {
-    
+
     let forecastSeconday = document.createElement('p');
     let forecastThirday = document.createElement('p');
     let forecastForthday = document.createElement('p');
-    
-    
+
+
     const daysF1 = new Date(data.list[4].dt_txt);
     const daysF2 = new Date(data.list[12].dt_txt);
     const daysF3 = new Date(data.list[20].dt_txt);
-    
+
     forecastSeconday.innerHTML = `${weekday[daysF1.getDay()]}: ${data.list[4].main.temp} &deg;F`;
     forecastThirday.innerHTML = `${weekday[daysF2.getDay()]}: ${data.list[12].main.temp} &deg;F`;
     forecastForthday.innerHTML = `${weekday[daysF3.getDay()]}: ${data.list[20].main.temp} &deg;F`;
@@ -232,12 +262,7 @@ const displayForecast = (data) => {
     forecast.appendChild(forecastSeconday);
     forecast.appendChild(forecastThirday);
     forecast.appendChild(forecastForthday);
-    
 
-    console.log(weekday[daysF1.getDay()]);
-    
-   
-    
 }
 
 getForecastData();
@@ -252,6 +277,6 @@ const closeBanner = () => {
     banner.style.display = 'none';
 };
 
-if (weekDay >= 1 && weekDay <= 6) {
+if (weekDay >= 1 && weekDay <= 3) {
     banner.style.display = 'block';
 }
