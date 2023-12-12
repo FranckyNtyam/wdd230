@@ -399,7 +399,7 @@ form label input, select,textarea {
     width: auto;
 }
 
-#main-join-page .spotlights, #main-join-page .cards, #main-join-page .menu, #main-join-page .forecast, #main-join-page .icon-weather, #main-join-page #banner {
+#main-join-page .spotlights, #main-join-page .cards, #main-join-page .menu, #main-join-page .forecast, #main-join-page .icon-weather, #main-join-page #banner, #main-join-page .visits {
     display: none;
 }
 
